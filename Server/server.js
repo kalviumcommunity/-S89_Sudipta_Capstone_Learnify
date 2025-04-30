@@ -1,6 +1,8 @@
 // server.js
 const express = require('express');
+
 const mongoose = require('mongoose');
+
 const dotenv = require('dotenv');
 
 // Load environment variables from .env

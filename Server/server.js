@@ -17,9 +17,22 @@ app.use(express.json());
 
 
 // Sample Route
-app.get('/', (req, res) => {
-  res.send('Backend is working!');
+app.get("/", (req, res) => {
+  try {
+      res.status(200).send({ msg: "This is my backend" });
+  } catch (error) {
+      res.status(500).send({ message: "Error occurred" });
+  }
 });
+
+
+
+
+
+
+
+
+
 
 // MongoDB Connection
 mongoose.connect(process.env.MONGO_URI, {

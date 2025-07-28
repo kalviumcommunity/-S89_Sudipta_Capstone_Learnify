@@ -1,14 +1,13 @@
-import './App.css'
+import React from 'react';
+
+import HomePage from './Components/Homepage';
 
 function App() {
-
   return (
-    <>
-      <h1>Learnify</h1>  
-    </>
-  )
+    <div className="App">
+      <HomePage />
+    </div>
+  );
 }
 
-export default App
-
-
+export default App;

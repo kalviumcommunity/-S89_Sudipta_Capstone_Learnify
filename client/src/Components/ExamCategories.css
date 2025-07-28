@@ -1,0 +1,136 @@
+/* Exam Categories Section */
+.exam-categories {
+    text-align: center;
+    padding: 50px 20px;
+    background: transparent;
+    color: #c9d1d9;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #60a5fa;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  .section-subtitle {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #a5f3fc;
+    line-height: 1.6;
+    text-shadow: 0 0 10px rgba(96, 165, 250, 0.8);
+    animation: fadeIn 1.5s ease forwards;
+  }
+  
+  /* Horizontal Cards Layout */
+  .exam-cards {
+    display: flex; /* Changed to flex for horizontal layout */
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: nowrap; /* Prevent wrapping to new line */
+    overflow-x: auto; /* Add scroll if overflow */
+    padding: 20px 0;
+  }
+  
+  .exam-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 250px; /* Ensure consistent size */
+  }
+  
+  .exam-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #60a5fa;
+  }
+  
+  .exam-card h3 {
+    font-size: 20px;
+    color: #60a5fa;
+    margin-bottom: 10px;
+  }
+  
+  .exam-card p {
+    font-size: 14px;
+    color: #c9d1d9;
+    margin-bottom: 20px;
+  }
+  
+  .start-test-btn {
+    background: #60a5fa;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.4s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .start-test-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(96, 165, 250, 0.1);
+    transition: all 0.6s ease;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 0;
+  }
+  
+  .start-test-btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .start-test-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #60a5fa, 0 0 20px #60a5fa;
+  }
+  
+  .view-all-btn {
+    margin-top: 30px;
+    background: transparent;
+    color: #60a5fa;
+    border: 1px solid #60a5fa;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.4s ease, color 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .view-all-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(96, 165, 250, 0.1);
+    transition: all 0.6s ease;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 0;
+  }
+  
+  .view-all-btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .view-all-btn:hover {
+    transform: scale(1.1);
+    background: #60a5fa;
+    color: #000;
+  }
+  

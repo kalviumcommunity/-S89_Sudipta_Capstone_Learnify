@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const User = require('../Models/user'); // Corrected path
-
+const User = require('../Models/user'); 
 router.post('/register', async (req, res) => {
   try {
     const { name, email, password } = req.body;
@@ -19,7 +18,6 @@ router.post('/register', async (req, res) => {
     res.status(500).json({ message: 'Server error' });
   }
 });
-
 router.post('/login', async (req, res) => {
   try {
     const { email, password } = req.body;

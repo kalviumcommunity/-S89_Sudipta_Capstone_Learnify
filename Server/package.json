@@ -3,20 +3,49 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "dev:debug": "nodemon --inspect server.js",
+    "test": "cross-env NODE_ENV=test jest",
+    "test:watch": "cross-env NODE_ENV=test jest --watch",
+    "test:coverage": "cross-env NODE_ENV=test jest --coverage",
+    "test:verbose": "cross-env NODE_ENV=test jest --verbose",
+    "test:unit": "cross-env NODE_ENV=test jest tests/models tests/middleware tests/utils",
+    "test:integration": "cross-env NODE_ENV=test jest tests/routes",
+    "seed": "node setupTestData.js",
+    "seed:quick": "node quickSeeder.js",
+    "seed:dev": "node scripts/devSeeder.js",
+    "seed:clean": "node scripts/cleanDatabase.js",
+    "db:reset": "npm run seed:clean && npm run seed:dev",
+    "lint": "echo 'Add ESLint configuration'",
+    "format": "echo 'Add Prettier configuration'",
+    "logs:clear": "node scripts/clearLogs.js",
+    "health": "curl http://localhost:5000/health || echo 'Server not running'",
+    "docs": "echo 'Generate API documentation'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "express-rate-limit": "^7.5.1",
+    "express-session": "^1.18.1",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.14.1",
-    "nodemon": "^3.1.10"
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0"
   },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^10.1.4",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.1"
   }
 }

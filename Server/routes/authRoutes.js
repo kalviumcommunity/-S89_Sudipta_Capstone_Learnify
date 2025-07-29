@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-<<<<<<< HEAD
 const passport = require('passport');
 const User = require('../models/User');
+const jwt = require('jsonwebtoken');
 const { generateToken } = require('../middleware/auth');
 const { validateRegistration, validateLogin } = require('../middleware/validation');
 const { catchAsync, AppError } = require('../middleware/errorHandler');
@@ -14,20 +14,15 @@ const logger = require('../utils/logger');
 router.post('/register', validateRegistration, catchAsync(async (req, res) => {
   const { name, email, password } = req.body;
 
-  // Check if user already exists
   const existingUser = await User.findOne({ email });
   if (existingUser) {
     throw new AppError(ERROR_MESSAGES.USER_EXISTS, HTTP_STATUS.BAD_REQUEST);
   }
 
-  // Create new user (password will be hashed by pre-save middleware)
   const newUser = new User({ name, email, password });
   await newUser.save();
 
-  // Generate JWT token
   const token = generateToken(newUser._id);
-
-  // Remove password from response
   newUser.password = undefined;
 
   logger.info(`New user registered: ${email}`);
@@ -42,17 +37,13 @@ router.post('/register', validateRegistration, catchAsync(async (req, res) => {
 router.post('/login', validateLogin, catchAsync(async (req, res) => {
   const { email, password } = req.body;
 
-  // Find user and include password for comparison
   const user = await User.findOne({ email }).select('+password');
 
   if (!user || !(await user.correctPassword(password, user.password))) {
     throw new AppError(ERROR_MESSAGES.INVALID_CREDENTIALS, HTTP_STATUS.UNAUTHORIZED);
   }
 
-  // Generate JWT token
   const token = generateToken(user._id);
-
-  // Remove password from response
   user.password = undefined;
 
   logger.info(`User logged in: ${email}`);
@@ -71,7 +62,7 @@ router.get('/google', (req, res, next) => {
   })(req, res, next);
 });
 
-// ✅ Fixed: Google OAuth Callback with environment-based redirect and JWT token
+// ✅ Google OAuth Callback
 router.get('/google/callback',
   (req, res, next) => {
     logger.info('Google OAuth callback received');
@@ -86,13 +77,10 @@ router.get('/google/callback',
         return res.redirect(`${process.env.CLIENT_URL}/signin?error=oauth_failed`);
       }
 
-      // Generate JWT token for the authenticated user
       const token = generateToken(req.user._id);
 
       logger.info(`Google OAuth successful for user: ${req.user.email}`);
 
-      // Redirect to dashboard with token as query parameter
-      // The client will extract the token and store it
       res.redirect(`${process.env.CLIENT_URL}/dashboard?token=${token}`);
     } catch (error) {
       logger.error('Error in Google OAuth callback:', error);
@@ -101,26 +89,17 @@ router.get('/google/callback',
   }
 );
 
-// 👤 Get current user (for checking session after OAuth or JWT token)
+// 👤 Get current user (JWT or Google OAuth)
 router.get('/me', async (req, res) => {
-=======
-const User = require('../Models/user'); 
-router.post('/register', async (req, res) => {
->>>>>>> ed4d2209b2996fb09f96f64591b8d2341ccb34c7
   try {
-    // First check if user is authenticated via session (Google OAuth)
     if (req.user) {
       return res.json({ user: req.user });
     }
 
-    // If no session, check for JWT token
     const authHeader = req.headers['authorization'];
     const token = authHeader && authHeader.split(' ')[1];
 
     if (token) {
-      const jwt = require('jsonwebtoken');
-      const User = require('../models/User');
-
       try {
         const decoded = jwt.verify(token, process.env.JWT_SECRET);
         const user = await User.findById(decoded.userId).select('-password');
@@ -139,29 +118,19 @@ router.post('/register', async (req, res) => {
     res.status(500).json({ message: 'Server error' });
   }
 });
-<<<<<<< HEAD
 
 // 🚪 Logout
 router.post('/logout', (req, res) => {
   req.logout((err) => {
     if (err) {
       return res.status(500).json({ message: 'Logout failed' });
-=======
-router.post('/login', async (req, res) => {
-  try {
-    const { email, password } = req.body;
-
-    if (!email || !password) {
-      return res.status(400).json({ message: 'Please fill all fields' });
->>>>>>> ed4d2209b2996fb09f96f64591b8d2341ccb34c7
     }
     res.json({ message: 'Logged out successfully' });
   });
 });
 
-// 🔑 Forgot Password (placeholder for future implementation)
+// 🔑 Forgot Password (placeholder)
 router.post('/forgot-password', catchAsync(async (req, res) => {
-  // TODO: Implement password reset functionality
   return sendSuccess(res, HTTP_STATUS.OK, 'Password reset functionality will be implemented soon', {
     message: 'Password reset feature is coming soon. Please contact support for assistance.'
   });

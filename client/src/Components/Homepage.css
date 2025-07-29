@@ -1,0 +1,75 @@
+/* Container layout for the homepage */
+.homepage {
+    position: relative;
+    z-index: 1; /* Ensure it is above the background */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow: hidden; */ /* Comment this out to test */
+  }
+  
+  /* Section spacing control */
+  .section {
+    width: 100%;
+    max-width: 1400px;
+    margin: 60px auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+  
+    .hero-section {
+      padding: 80px 20px;
+    }
+  
+    .tagline {
+      font-size: 32px;
+    }
+  
+    .description {
+      font-size: 16px;
+    }
+  
+    .cta-buttons .cta {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+  
+    .exam-cards {
+      grid-template-columns: 1fr;
+    }
+  
+    .section-title {
+      font-size: 28px;
+    }
+  
+    .section-subtitle {
+      font-size: 16px;
+    }
+  }
+
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0; /* Ensure it is behind the homepage */
+  }

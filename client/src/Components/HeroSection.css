@@ -1,0 +1,107 @@
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 80px;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 700px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.2s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .tagline {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #60a5fa;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #60a5fa, 0 0 20px #60a5fa;
+    }
+    to {
+      text-shadow: 0 0 20px #3b82f6, 0 0 40px #3b82f6;
+    }
+  }
+  
+  .description {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #a5f3fc;
+    line-height: 1.6;
+    text-shadow: 0 0 10px rgba(96, 165, 250, 0.8);
+    animation: fadeIn 1.5s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .cta-buttons .cta {
+    margin-right: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.4s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    animation: fadeIn 2s ease forwards;
+  }
+  
+  .cta-buttons .cta::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(96, 165, 250, 0.1);
+    transition: all 0.6s ease;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 0;
+  }
+  
+  .cta-buttons .cta:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .cta-buttons .cta span {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .signup-btn {
+    background-color: #60a5fa;
+    color: #000;
+  }
+  
+  .demo-btn {
+    background-color: transparent;
+    color: #60a5fa;
+    border: 1px solid #60a5fa;
+  }
+  
+  .cta-buttons .cta:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 15px #60a5fa;
+    background-color: #3b82f6;
+    color: #000;
+  }
+  

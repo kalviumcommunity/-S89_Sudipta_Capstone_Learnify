@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 
@@ -33,6 +34,17 @@ function App() {
         <Route path="/signin" element={<SignIn />} />
       </Routes>
     </AuthProvider>
+=======
+import React from 'react';
+
+import HomePage from './Components/Homepage';
+
+function App() {
+  return (
+    <div className="App">
+      <HomePage />
+    </div>
+>>>>>>> ed4d2209b2996fb09f96f64591b8d2341ccb34c7
   );
 }
 

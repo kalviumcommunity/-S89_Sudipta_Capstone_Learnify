@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+<<<<<<< HEAD
 const passport = require('passport');
 const User = require('../models/User');
 const { generateToken } = require('../middleware/auth');
@@ -102,6 +103,10 @@ router.get('/google/callback',
 
 // 👤 Get current user (for checking session after OAuth or JWT token)
 router.get('/me', async (req, res) => {
+=======
+const User = require('../Models/user'); 
+router.post('/register', async (req, res) => {
+>>>>>>> ed4d2209b2996fb09f96f64591b8d2341ccb34c7
   try {
     // First check if user is authenticated via session (Google OAuth)
     if (req.user) {
@@ -134,12 +139,21 @@ router.get('/me', async (req, res) => {
     res.status(500).json({ message: 'Server error' });
   }
 });
+<<<<<<< HEAD
 
 // 🚪 Logout
 router.post('/logout', (req, res) => {
   req.logout((err) => {
     if (err) {
       return res.status(500).json({ message: 'Logout failed' });
+=======
+router.post('/login', async (req, res) => {
+  try {
+    const { email, password } = req.body;
+
+    if (!email || !password) {
+      return res.status(400).json({ message: 'Please fill all fields' });
+>>>>>>> ed4d2209b2996fb09f96f64591b8d2341ccb34c7
     }
     res.json({ message: 'Logged out successfully' });
   });

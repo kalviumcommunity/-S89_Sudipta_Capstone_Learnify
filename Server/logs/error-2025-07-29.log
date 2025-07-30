@@ -45,3 +45,49 @@
 [2025-07-29T04:45:58.020Z] [WARN] POST /api/dashboard/submit-test-result - 500 - 10013ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
 [2025-07-29T04:45:58.028Z] [WARN] POST /api/dashboard/submit-test-result - 500 - 10008ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
 [2025-07-29T04:57:06.896Z] [WARN] MongoDB disconnected. Attempting to reconnect...
+[2025-07-29T06:27:03.945Z] [WARN] GET /api/api/dsa/progress - 404 - 113ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:04.048Z] [WARN] GET /api/api/dsa/progress - 404 - 78ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:12.894Z] [WARN] GET /api/api/dsa/progress - 404 - 54ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:12.994Z] [WARN] GET /api/api/dsa/progress - 404 - 74ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:31.061Z] [WARN] GET /api/api/dsa/progress - 404 - 60ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:31.186Z] [WARN] GET /api/api/dsa/progress - 404 - 116ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:29:33.439Z] [WARN] GET /api/api/dsa/progress - 404 - 82ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:29:33.506Z] [WARN] GET /api/api/dsa/progress - 404 - 53ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:04.780Z] [WARN] GET /api/api/dsa/progress - 404 - 259ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:04.871Z] [WARN] GET /api/api/dsa/progress - 404 - 54ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:28.996Z] [WARN] GET /api/api/dsa/progress - 404 - 49ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:29.063Z] [WARN] GET /api/api/dsa/progress - 404 - 57ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:39.598Z] [WARN] GET /api/api/dsa/progress - 404 - 48ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:39.700Z] [ERROR] Error fetching topic details: | {"stringValue":"\"arrays\"","valueType":"string","kind":"ObjectId","value":"arrays","path":"_id","reason":{},"name":"CastError","message":"Cast to ObjectId failed for value \"arrays\" (type string) at path \"_id\" for model \"DSATopic\""}
+[2025-07-29T06:33:39.708Z] [WARN] GET /topics/arrays - 500 - 151ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:39.721Z] [WARN] GET /api/api/dsa/progress - 404 - 85ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:39.826Z] [ERROR] Error fetching topic details: | {"stringValue":"\"arrays\"","valueType":"string","kind":"ObjectId","value":"arrays","path":"_id","reason":{},"name":"CastError","message":"Cast to ObjectId failed for value \"arrays\" (type string) at path \"_id\" for model \"DSATopic\""}
+[2025-07-29T06:33:39.831Z] [WARN] GET /topics/arrays - 500 - 100ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:42.438Z] [WARN] GET /api/api/dsa/progress - 404 - 46ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:42.501Z] [WARN] GET /api/api/dsa/progress - 404 - 48ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:44.886Z] [WARN] GET /api/api/dsa/progress - 404 - 50ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:44.963Z] [WARN] GET /api/api/dsa/progress - 404 - 57ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:50.286Z] [WARN] GET /api/api/dsa/streak - 404 - 55ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:50.386Z] [WARN] GET /api/api/dsa/streak - 404 - 68ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:50.497Z] [WARN] GET /daily-challenge - 404 - 257ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:50.719Z] [WARN] GET /daily-challenge - 404 - 209ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:02.636Z] [WARN] GET /api/api/dsa/progress - 404 - 57ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:02.665Z] [WARN] GET /api/api/dsa/topics - 404 - 78ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:02.748Z] [WARN] GET /api/api/dsa/progress - 404 - 95ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:02.771Z] [WARN] GET /api/api/dsa/topics - 404 - 84ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:02.846Z] [WARN] GET /api/api/dsa/topics - 404 - 55ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:02.928Z] [WARN] GET /api/api/dsa/topics - 404 - 57ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:54:41.917Z] [WARN] MongoDB disconnected. Attempting to reconnect...
+[2025-07-29T06:55:43.674Z] [WARN] POST /submit-test-result - 400 - 323ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:57:23.087Z] [WARN] MongoDB disconnected. Attempting to reconnect...
+[2025-07-29T07:05:46.786Z] [WARN] MongoDB disconnected. Attempting to reconnect...
+[2025-07-29T07:09:14.275Z] [WARN] POST /submit-test-result - 400 - 253ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:16:22.267Z] [WARN] MongoDB disconnected. Attempting to reconnect...
+[2025-07-29T07:33:43.492Z] [WARN] GET /api/api/dsa/progress - 404 - 52ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:33:43.548Z] [WARN] GET /api/api/dsa/progress - 404 - 45ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:36:08.575Z] [WARN] GET /api/api/dsa/progress - 404 - 229ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:36:08.626Z] [WARN] GET /topics/trees - 401 - 159ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:36:08.680Z] [WARN] GET /api/api/dsa/progress - 404 - 55ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:36:08.688Z] [WARN] GET /topics/trees - 401 - 55ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:47:54.901Z] [WARN] MongoDB disconnected. Attempting to reconnect...
+[2025-07-29T07:54:11.943Z] [WARN] MongoDB disconnected. Attempting to reconnect...

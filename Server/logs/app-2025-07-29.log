@@ -154,3 +154,354 @@
 [2025-07-29T05:05:50.865Z] [INFO] GET /?exam=neet&chapter=Plant%20physiology&limit=30 - 200 - 97ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
 [2025-07-29T05:21:18.093Z] [INFO] GET /?exam=neet&chapter=Plant%20physiology&limit=30 - 200 - 226ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
 [2025-07-29T05:21:18.204Z] [INFO] GET /?exam=neet&chapter=Plant%20physiology&limit=30 - 200 - 101ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T05:50:26.661Z] [INFO] ✅ MongoDB Connected: ac-7mlv6vi-shard-00-01.tdcydrh.mongodb.net
+[2025-07-29T05:50:26.689Z] [INFO] 🚀 Server running on http://localhost:5000
+[2025-07-29T05:50:26.691Z] [INFO] 📊 Environment: development
+[2025-07-29T06:06:54.001Z] [INFO] GET /filters - 200 - 822ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:06:54.416Z] [INFO] GET /top-performers?exam=all&timeframe=all - 200 - 684ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:06:54.542Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 200 - 817ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:06:54.591Z] [INFO] GET /filters - 304 - 106ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:06:54.761Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 198ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:06:55.261Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 626ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:07:13.979Z] [INFO] Google OAuth initiated
+[2025-07-29T06:07:14.080Z] [INFO] GET /google - 302 - 176ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:07:21.306Z] [INFO] Google OAuth callback received
+[2025-07-29T06:07:22.428Z] [INFO] Google OAuth strategy processing user: sudiptab556677@gmail.com
+[2025-07-29T06:07:22.810Z] [INFO] Google OAuth successful for user: sudiptab556677@gmail.com
+[2025-07-29T06:07:22.873Z] [INFO] GET /google/callback?code=4%2F0AVMBsJhqRJHag47nitOptRGxcMXHqbO1iUoJIAM0GlqhGujs5dnzKJGMpvRhbjYv9jsW8Q&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=1&prompt=none - 302 - 1571ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:07:39.731Z] [INFO] GET /me - 200 - 108ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:07:39.872Z] [INFO] GET /me - 304 - 84ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:07:40.333Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:07:40.350Z] [INFO] GET /test-history?limit=10 - 200 - 434ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:07:40.643Z] [INFO] GET /calendar? - 304 - 723ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:07:40.692Z] [INFO] Dashboard stats retrieved for user: 685bb80bf9dbe50abb35223f
+[2025-07-29T06:07:40.700Z] [INFO] GET /stats - 200 - 802ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:07:40.922Z] [INFO] GET /stats - 304 - 185ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:07:40.969Z] [INFO] GET /calendar? - 304 - 305ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:07:40.988Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:07:41.001Z] [INFO] GET /test-history?limit=10 - 304 - 347ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:07:41.135Z] [INFO] GET /stats - 304 - 190ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:07:41.285Z] [INFO] GET /calendar? - 304 - 241ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:07:41.314Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:07:41.326Z] [INFO] GET /test-history?limit=10 - 304 - 272ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:13:50.854Z] [INFO] Google OAuth initiated
+[2025-07-29T06:13:50.905Z] [INFO] GET /google - 302 - 242ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:13:56.102Z] [INFO] Google OAuth callback received
+[2025-07-29T06:13:57.046Z] [INFO] Google OAuth strategy processing user: sudiptab556677@gmail.com
+[2025-07-29T06:13:57.183Z] [INFO] Google OAuth successful for user: sudiptab556677@gmail.com
+[2025-07-29T06:13:57.203Z] [INFO] GET /google/callback?code=4%2F0AVMBsJjufBQFPhprroX2Oqz2REkeXqdYkQrvUjDjpGHodwmnZs3-M8l6sIFLvHB1yOAZ6g&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=1&prompt=none - 302 - 1199ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:13:58.285Z] [INFO] GET /me - 304 - 74ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:13:58.367Z] [INFO] GET /me - 304 - 55ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:13:58.741Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:13:58.748Z] [INFO] GET /test-history?limit=10 - 304 - 325ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:13:58.763Z] [INFO] Dashboard stats retrieved for user: 685bb80bf9dbe50abb35223f
+[2025-07-29T06:13:58.768Z] [INFO] GET /stats - 304 - 348ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:13:58.824Z] [INFO] GET /calendar? - 304 - 400ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:13:58.937Z] [INFO] GET /stats - 304 - 96ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:13:59.042Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:13:59.047Z] [INFO] GET /test-history?limit=10 - 304 - 225ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:13:59.068Z] [INFO] GET /stats - 304 - 117ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:13:59.074Z] [INFO] GET /calendar? - 304 - 228ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:13:59.276Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:13:59.281Z] [INFO] GET /test-history?limit=10 - 304 - 199ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:13:59.296Z] [INFO] GET /calendar? - 304 - 204ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:20:21.311Z] [INFO] GET /filters - 304 - 307ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:20:21.360Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 226ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:20:21.393Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 263ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:20:21.410Z] [INFO] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 200 - 277ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:20:21.486Z] [INFO] GET /filters - 304 - 129ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:20:21.501Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 116ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:20:21.574Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 159ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:20:21.630Z] [INFO] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 304 - 176ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:20:23.248Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:20:23.262Z] [INFO] GET /test-history?limit=10 - 304 - 300ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:20:23.340Z] [INFO] GET /calendar? - 304 - 342ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:20:23.448Z] [INFO] Dashboard stats retrieved for user: 685bb80bf9dbe50abb35223f
+[2025-07-29T06:20:23.461Z] [INFO] GET /stats - 304 - 469ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:20:23.687Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:20:23.697Z] [INFO] GET /test-history?limit=10 - 304 - 305ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:20:23.728Z] [INFO] GET /stats - 304 - 118ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:20:23.735Z] [INFO] GET /calendar? - 304 - 340ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:26:26.447Z] [INFO] GET /filters - 304 - 2579ms | {"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:26:27.300Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 3394ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:26:27.396Z] [INFO] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 304 - 3646ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:26:27.714Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 3814ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:26:31.149Z] [INFO] GET /filters - 304 - 4220ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:26:32.287Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 4581ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:26:33.198Z] [INFO] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 304 - 4063ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:26:34.283Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 5626ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:26:38.509Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:26:39.736Z] [INFO] GET /test-history?limit=10 - 304 - 7091ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:26:40.253Z] [INFO] Dashboard stats retrieved for user: 685bb80bf9dbe50abb35223f
+[2025-07-29T06:26:40.566Z] [INFO] GET /stats - 304 - 7764ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:26:41.293Z] [INFO] GET /calendar? - 304 - 7043ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:26:42.444Z] [INFO] GET /stats - 304 - 1180ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:26:43.708Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:26:43.790Z] [INFO] GET /test-history?limit=10 - 304 - 3363ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:26:43.994Z] [INFO] GET /calendar? - 304 - 2266ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:03.945Z] [WARN] GET /api/api/dsa/progress - 404 - 113ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:04.048Z] [WARN] GET /api/api/dsa/progress - 404 - 78ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:12.894Z] [WARN] GET /api/api/dsa/progress - 404 - 54ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:12.994Z] [WARN] GET /api/api/dsa/progress - 404 - 74ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:17.726Z] [INFO] Google OAuth initiated
+[2025-07-29T06:27:17.732Z] [INFO] GET /google - 302 - 52ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:21.116Z] [INFO] Google OAuth callback received
+[2025-07-29T06:27:22.141Z] [INFO] Google OAuth strategy processing user: sudiptab556677@gmail.com
+[2025-07-29T06:27:22.209Z] [INFO] Google OAuth successful for user: sudiptab556677@gmail.com
+[2025-07-29T06:27:22.222Z] [INFO] GET /google/callback?code=4%2F0AVMBsJjuOuihFE6GOgRIhSbsA0tShRQE9Pw39lv4G2QSn96Qu8NaizKAF5GQiWV2ccgIIw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=1&prompt=none - 302 - 1154ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:23.113Z] [INFO] GET /me - 304 - 62ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:23.189Z] [INFO] GET /me - 304 - 64ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:23.305Z] [INFO] GET /stats - 304 - 108ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:23.467Z] [INFO] GET /stats - 304 - 146ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:23.478Z] [INFO] GET /calendar? - 304 - 257ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:23.490Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:27:23.497Z] [INFO] GET /test-history?limit=10 - 304 - 282ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:23.594Z] [INFO] GET /stats - 304 - 111ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:23.722Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:27:23.728Z] [INFO] GET /test-history?limit=10 - 304 - 221ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:23.746Z] [INFO] GET /calendar? - 304 - 250ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:23.972Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:27:23.977Z] [INFO] GET /test-history?limit=10 - 304 - 219ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:24.007Z] [INFO] GET /calendar? - 304 - 238ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:31.061Z] [WARN] GET /api/api/dsa/progress - 404 - 60ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:27:31.186Z] [WARN] GET /api/api/dsa/progress - 404 - 116ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:29:33.439Z] [WARN] GET /api/api/dsa/progress - 404 - 82ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:29:33.506Z] [WARN] GET /api/api/dsa/progress - 404 - 53ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:04.780Z] [WARN] GET /api/api/dsa/progress - 404 - 259ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:04.871Z] [WARN] GET /api/api/dsa/progress - 404 - 54ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:09.779Z] [INFO] Google OAuth initiated
+[2025-07-29T06:32:09.803Z] [INFO] GET /google - 302 - 79ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:14.052Z] [INFO] Google OAuth callback received
+[2025-07-29T06:32:14.509Z] [INFO] Google OAuth strategy processing user: sudiptab556677@gmail.com
+[2025-07-29T06:32:14.584Z] [INFO] Google OAuth successful for user: sudiptab556677@gmail.com
+[2025-07-29T06:32:14.593Z] [INFO] GET /google/callback?code=4%2F0AVMBsJjD-dUSRtJh5z6cnQHzP0xTIA2qoyz8aL8O3EJFgO8iz9nFlvrn4uIM9x7lArNzQg&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=1&prompt=none - 302 - 591ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:15.696Z] [INFO] GET /me - 304 - 61ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:15.771Z] [INFO] GET /me - 304 - 57ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:16.174Z] [INFO] Dashboard stats retrieved for user: 685bb80bf9dbe50abb35223f
+[2025-07-29T06:32:16.180Z] [INFO] GET /stats - 304 - 373ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:16.197Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:32:16.245Z] [INFO] GET /test-history?limit=10 - 304 - 417ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:16.250Z] [INFO] GET /calendar? - 304 - 419ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:16.372Z] [INFO] GET /stats - 304 - 109ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:16.497Z] [INFO] GET /stats - 304 - 106ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:16.508Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:32:16.516Z] [INFO] GET /test-history?limit=10 - 304 - 222ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:16.530Z] [INFO] GET /calendar? - 304 - 234ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:16.744Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:32:16.756Z] [INFO] GET /test-history?limit=10 - 304 - 202ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:16.784Z] [INFO] GET /calendar? - 304 - 208ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:28.996Z] [WARN] GET /api/api/dsa/progress - 404 - 49ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:32:29.063Z] [WARN] GET /api/api/dsa/progress - 404 - 57ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:39.598Z] [WARN] GET /api/api/dsa/progress - 404 - 48ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:39.700Z] [ERROR] Error fetching topic details: | {"stringValue":"\"arrays\"","valueType":"string","kind":"ObjectId","value":"arrays","path":"_id","reason":{},"name":"CastError","message":"Cast to ObjectId failed for value \"arrays\" (type string) at path \"_id\" for model \"DSATopic\""}
+[2025-07-29T06:33:39.708Z] [WARN] GET /topics/arrays - 500 - 151ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:39.721Z] [WARN] GET /api/api/dsa/progress - 404 - 85ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:39.826Z] [ERROR] Error fetching topic details: | {"stringValue":"\"arrays\"","valueType":"string","kind":"ObjectId","value":"arrays","path":"_id","reason":{},"name":"CastError","message":"Cast to ObjectId failed for value \"arrays\" (type string) at path \"_id\" for model \"DSATopic\""}
+[2025-07-29T06:33:39.831Z] [WARN] GET /topics/arrays - 500 - 100ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:42.438Z] [WARN] GET /api/api/dsa/progress - 404 - 46ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:42.501Z] [WARN] GET /api/api/dsa/progress - 404 - 48ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:44.886Z] [WARN] GET /api/api/dsa/progress - 404 - 50ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:44.963Z] [WARN] GET /api/api/dsa/progress - 404 - 57ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:50.286Z] [WARN] GET /api/api/dsa/streak - 404 - 55ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:50.386Z] [WARN] GET /api/api/dsa/streak - 404 - 68ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:50.497Z] [WARN] GET /daily-challenge - 404 - 257ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:33:50.719Z] [WARN] GET /daily-challenge - 404 - 209ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:02.636Z] [WARN] GET /api/api/dsa/progress - 404 - 57ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:02.665Z] [WARN] GET /api/api/dsa/topics - 404 - 78ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:02.748Z] [WARN] GET /api/api/dsa/progress - 404 - 95ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:02.771Z] [WARN] GET /api/api/dsa/topics - 404 - 84ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:02.846Z] [WARN] GET /api/api/dsa/topics - 404 - 55ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:02.928Z] [WARN] GET /api/api/dsa/topics - 404 - 57ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:27.014Z] [INFO] GET /stats - 304 - 110ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:27.124Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:34:27.130Z] [INFO] GET /test-history?limit=10 - 304 - 232ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:27.147Z] [INFO] GET /calendar? - 304 - 240ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:27.166Z] [INFO] GET /stats - 304 - 130ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:27.361Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:34:27.367Z] [INFO] GET /test-history?limit=10 - 304 - 203ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:27.392Z] [INFO] GET /calendar? - 304 - 210ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:33.169Z] [INFO] GET /stats - 304 - 114ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:33.268Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:34:33.273Z] [INFO] GET /test-history?limit=10 - 304 - 211ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:33.290Z] [INFO] GET /calendar? - 304 - 226ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:33.320Z] [INFO] GET /stats - 304 - 120ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:33.514Z] [INFO] GET /calendar? - 304 - 209ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:33.526Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:34:33.538Z] [INFO] GET /test-history?limit=10 - 304 - 242ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:35.150Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 127ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:35.168Z] [INFO] GET /filters - 304 - 154ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:35.196Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 176ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:35.234Z] [INFO] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 304 - 213ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:35.273Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 108ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:35.301Z] [INFO] GET /filters - 304 - 114ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:35.357Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 148ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:34:35.413Z] [INFO] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 304 - 150ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:36:53.403Z] [INFO] GET /stats - 304 - 130ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:36:53.515Z] [INFO] GET /calendar? - 304 - 230ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:36:53.527Z] [INFO] GET /stats - 304 - 116ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:36:53.537Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:36:53.542Z] [INFO] GET /test-history?limit=10 - 304 - 253ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:36:53.751Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:36:53.756Z] [INFO] GET /calendar? - 304 - 207ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:36:53.761Z] [INFO] GET /test-history?limit=10 - 304 - 206ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:37:44.848Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:37:44.856Z] [INFO] GET /test-history?limit=10 - 304 - 239ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:37:44.871Z] [INFO] GET /calendar? - 304 - 248ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:37:44.891Z] [INFO] Dashboard stats retrieved for user: 685bb80bf9dbe50abb35223f
+[2025-07-29T06:37:44.897Z] [INFO] GET /stats - 304 - 303ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:37:45.136Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:37:45.153Z] [INFO] GET /test-history?limit=10 - 304 - 274ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:37:45.175Z] [INFO] GET /calendar? - 304 - 289ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:41:42.872Z] [INFO] GET /top-performers?exam=all&timeframe=all - 200 - 657ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:41:43.586Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 200 - 1448ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:43:52.273Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 2373ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:43:52.518Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 3015ms | {"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:43:53.091Z] [INFO] Google OAuth initiated
+[2025-07-29T06:43:53.124Z] [INFO] GET /google - 302 - 125ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:43:59.463Z] [INFO] Google OAuth callback received
+[2025-07-29T06:44:00.440Z] [INFO] Google OAuth strategy processing user: sudiptab556677@gmail.com
+[2025-07-29T06:44:00.583Z] [INFO] Google OAuth successful for user: sudiptab556677@gmail.com
+[2025-07-29T06:44:00.622Z] [INFO] GET /google/callback?code=4%2F0AVMBsJiCrxxMaYqF_yXiwfcnLWEuPQ_1iPmKw6ff0MoPspr0sSCzvBkEOPQA_EmOqFPktA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=1&prompt=none - 302 - 1258ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:44:03.135Z] [INFO] GET /me - 304 - 104ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:44:03.339Z] [INFO] GET /me - 304 - 158ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:44:04.504Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:44:04.634Z] [INFO] GET /test-history?limit=10 - 200 - 1174ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:44:04.641Z] [INFO] GET /calendar? - 200 - 1157ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:44:04.668Z] [INFO] Dashboard stats retrieved for user: 685bb80bf9dbe50abb35223f
+[2025-07-29T06:44:04.704Z] [INFO] GET /stats - 200 - 1268ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:44:04.921Z] [INFO] GET /stats - 304 - 169ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:44:05.072Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:44:05.092Z] [INFO] GET /test-history?limit=10 - 304 - 395ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:44:05.131Z] [INFO] GET /calendar? - 304 - 384ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:44:05.419Z] [INFO] GET /stats - 304 - 176ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:44:05.729Z] [INFO] GET /calendar? - 304 - 353ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:44:05.784Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:44:05.814Z] [INFO] GET /test-history?limit=10 - 304 - 455ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:54:19.893Z] [INFO] MongoDB reconnected
+[2025-07-29T06:54:41.917Z] [WARN] MongoDB disconnected. Attempting to reconnect...
+[2025-07-29T06:54:42.036Z] [INFO] MongoDB reconnected
+[2025-07-29T06:54:42.761Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:54:42.782Z] [INFO] GET /test-history?limit=10 - 304 - 6950ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:54:42.791Z] [INFO] Dashboard stats retrieved for user: 685bb80bf9dbe50abb35223f
+[2025-07-29T06:54:42.801Z] [INFO] GET /stats - 304 - 6529ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:54:42.934Z] [INFO] GET /stats - 304 - 101ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:54:43.027Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:54:43.034Z] [INFO] GET /test-history?limit=10 - 304 - 213ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:54:43.106Z] [INFO] GET /calendar? - 304 - 6822ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:54:43.361Z] [INFO] GET /calendar? - 304 - 236ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:55:18.046Z] [INFO] GET /?exam=jee&chapter=Kinematics&limit=30 - 200 - 371ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:55:18.299Z] [INFO] GET /?exam=jee&chapter=Kinematics&limit=30 - 200 - 236ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:55:43.674Z] [WARN] POST /submit-test-result - 400 - 323ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:56:01.910Z] [INFO] GET /stats - 304 - 191ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:56:02.120Z] [INFO] GET /stats - 304 - 192ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:56:02.627Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:56:02.632Z] [INFO] GET /test-history?limit=10 - 304 - 906ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:56:02.703Z] [INFO] GET /calendar? - 304 - 974ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:56:03.130Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:56:03.135Z] [INFO] GET /test-history?limit=10 - 304 - 490ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:56:03.239Z] [INFO] GET /calendar? - 304 - 515ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:56:10.267Z] [INFO] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 200 - 472ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:56:10.617Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 830ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:56:10.689Z] [INFO] GET /filters - 200 - 896ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:56:10.853Z] [INFO] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 304 - 571ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:56:10.864Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 239ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:56:11.570Z] [INFO] GET /filters - 304 - 871ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:56:11.725Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 1927ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:56:12.128Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 375ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:56:19.523Z] [INFO] GET /stats - 304 - 177ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:56:19.759Z] [INFO] GET /stats - 304 - 223ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:56:20.259Z] [INFO] GET /calendar? - 304 - 900ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:56:20.352Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:56:20.358Z] [INFO] GET /test-history?limit=10 - 304 - 1001ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:56:20.738Z] [INFO] GET /calendar? - 304 - 470ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:56:20.921Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:56:20.925Z] [INFO] GET /test-history?limit=10 - 304 - 553ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:57:12.662Z] [INFO] MongoDB reconnected
+[2025-07-29T06:57:12.667Z] [INFO] MongoDB reconnected
+[2025-07-29T06:57:23.087Z] [WARN] MongoDB disconnected. Attempting to reconnect...
+[2025-07-29T06:57:25.005Z] [INFO] MongoDB reconnected
+[2025-07-29T06:59:07.018Z] [INFO] GET /filters - 304 - 1446ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:07.102Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 1128ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:07.332Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 1334ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:07.488Z] [INFO] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 304 - 1507ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:07.559Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 214ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:07.776Z] [INFO] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 304 - 249ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:07.962Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 849ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:08.597Z] [INFO] GET /filters - 304 - 1534ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:11.992Z] [INFO] GET /stats - 304 - 168ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:12.173Z] [INFO] GET /stats - 304 - 169ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:12.245Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:59:12.257Z] [INFO] GET /test-history?limit=10 - 304 - 423ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:12.339Z] [INFO] GET /calendar? - 304 - 503ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:12.594Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T06:59:12.601Z] [INFO] GET /test-history?limit=10 - 304 - 325ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:12.669Z] [INFO] GET /calendar? - 304 - 320ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:28.962Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 114ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:29.055Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 235ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:29.070Z] [INFO] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 304 - 228ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:29.166Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 187ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:29.237Z] [INFO] GET /filters - 304 - 426ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:29.334Z] [INFO] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 304 - 241ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:29.351Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 268ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:29.721Z] [INFO] GET /filters - 304 - 458ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:59.639Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 163ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T06:59:59.705Z] [INFO] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 304 - 232ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:00:00.055Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 592ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:04:44.081Z] [INFO] MongoDB reconnected
+[2025-07-29T07:04:44.133Z] [INFO] MongoDB reconnected
+[2025-07-29T07:05:46.786Z] [WARN] MongoDB disconnected. Attempting to reconnect...
+[2025-07-29T07:06:07.730Z] [INFO] MongoDB reconnected
+[2025-07-29T07:06:44.417Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 532ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:06:44.455Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 792ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:06:44.728Z] [INFO] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 304 - 831ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:06:53.663Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 189ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:06:53.817Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 147ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:06:53.856Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 375ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:06:54.001Z] [INFO] GET /filters - 304 - 519ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:06:54.011Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 144ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:06:54.150Z] [INFO] GET /filters - 304 - 123ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:07:05.843Z] [INFO] GET /?exam=neet&chapter=Plant%20physiology&limit=30 - 200 - 151ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:07:05.988Z] [INFO] GET /?exam=neet&chapter=Plant%20physiology&limit=30 - 200 - 138ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:09:14.275Z] [WARN] POST /submit-test-result - 400 - 253ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:09:39.707Z] [INFO] GET /?exam=neet&chapter=Plant%20physiology&limit=30 - 200 - 124ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:09:39.821Z] [INFO] GET /?exam=neet&chapter=Plant%20physiology&limit=30 - 200 - 99ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:09:46.453Z] [INFO] GET /?exam=neet&chapter=Plant%20physiology&limit=30 - 200 - 148ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:09:46.581Z] [INFO] GET /?exam=neet&chapter=Plant%20physiology&limit=30 - 200 - 116ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:10:12.354Z] [INFO] GET /?exam=neet&chapter=Plant%20physiology&limit=30 - 200 - 148ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:10:12.658Z] [INFO] GET /?exam=neet&chapter=Plant%20physiology&limit=30 - 200 - 299ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:13:02.969Z] [INFO] GET /?exam=neet&chapter=Plant%20physiology&limit=30 - 200 - 314ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:13:03.090Z] [INFO] GET /?exam=neet&chapter=Plant%20physiology&limit=30 - 200 - 103ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:16:11.773Z] [INFO] MongoDB reconnected
+[2025-07-29T07:16:22.267Z] [WARN] MongoDB disconnected. Attempting to reconnect...
+[2025-07-29T07:16:22.269Z] [INFO] MongoDB reconnected
+[2025-07-29T07:20:03.019Z] [INFO] GET /?exam=neet&chapter=Plant%20physiology&limit=30 - 200 - 858ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:20:03.157Z] [INFO] GET /?exam=neet&chapter=Plant%20physiology&limit=30 - 200 - 130ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:33:17.965Z] [INFO] GET /filters - 304 - 491ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:33:18.089Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 432ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:33:18.298Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 193ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:33:18.356Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 705ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:33:18.515Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 137ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:33:18.527Z] [INFO] GET /filters - 304 - 501ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:33:18.664Z] [INFO] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 304 - 1010ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:33:18.799Z] [INFO] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 304 - 127ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:33:35.732Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T07:33:35.738Z] [INFO] GET /test-history?limit=10 - 304 - 239ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:33:35.779Z] [INFO] GET /calendar? - 304 - 278ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:33:35.845Z] [INFO] Dashboard stats retrieved for user: 685bb80bf9dbe50abb35223f
+[2025-07-29T07:33:35.858Z] [INFO] GET /stats - 304 - 363ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:33:35.968Z] [INFO] GET /stats - 304 - 87ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:33:35.999Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-07-29T07:33:36.001Z] [INFO] GET /test-history?limit=10 - 304 - 197ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:33:36.011Z] [INFO] GET /calendar? - 304 - 202ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:33:43.492Z] [WARN] GET /api/api/dsa/progress - 404 - 52ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:33:43.548Z] [WARN] GET /api/api/dsa/progress - 404 - 45ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:36:08.575Z] [WARN] GET /api/api/dsa/progress - 404 - 229ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:36:08.626Z] [WARN] GET /topics/trees - 401 - 159ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:36:08.680Z] [WARN] GET /api/api/dsa/progress - 404 - 55ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:36:08.688Z] [WARN] GET /topics/trees - 401 - 55ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-29T07:47:44.418Z] [INFO] MongoDB reconnected
+[2025-07-29T07:47:54.901Z] [WARN] MongoDB disconnected. Attempting to reconnect...
+[2025-07-29T07:47:54.917Z] [INFO] MongoDB reconnected
+[2025-07-29T07:53:25.832Z] [INFO] MongoDB reconnected
+[2025-07-29T07:54:11.943Z] [WARN] MongoDB disconnected. Attempting to reconnect...
+[2025-07-29T07:54:18.359Z] [INFO] MongoDB reconnected

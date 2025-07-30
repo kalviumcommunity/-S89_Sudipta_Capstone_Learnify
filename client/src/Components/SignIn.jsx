@@ -141,7 +141,9 @@ export default function SignIn() {
                 </span>
               </div>
               <div className="signIn-forgot">
-                <a href="#">Forgot Password?</a>
+                <span style={{float:'right'}}>
+                  <a href="/forgot-password" style={{ color: '#3b82f6', textDecoration: 'underline', cursor: 'pointer' }}>Forgot Password?</a>
+                </span>
               </div>
             </div>
             <div className="signIn-checkbox-group">

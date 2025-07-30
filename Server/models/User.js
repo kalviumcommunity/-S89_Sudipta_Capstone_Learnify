@@ -24,13 +24,15 @@ const userSchema = new mongoose.Schema({
   // Streak tracking
   currentStreak: { type: Number, default: 0 },
   longestStreak: { type: Number, default: 0 },
-  lastActivityDate: Date
+  lastActivityDate: Date,
+  // Password reset fields
+  resetToken: String,
+  tokenExpires: Date
 }, {
   timestamps: true
 });
 
 // Indexes for better query performance
-// Note: email index is already created by unique: true in schema definition
 userSchema.index({ googleId: 1 });
 userSchema.index({ totalTestsAttempted: -1 });
 userSchema.index({ overallAccuracy: -1 });
@@ -40,20 +42,15 @@ userSchema.index({ joinedDate: 1 });
 
 // Hash password before saving
 userSchema.pre('save', async function(next) {
-  // Only hash the password if it has been modified (or is new)
   if (!this.isModified('password')) return next();
-
-  // Hash the password with cost of 12
   this.password = await bcrypt.hash(this.password, 12);
   next();
 });
 
-// Instance method to check password
 userSchema.methods.correctPassword = async function(candidatePassword, userPassword) {
   return await bcrypt.compare(candidatePassword, userPassword);
 };
 
-// Instance method to check if password was changed after JWT was issued
 userSchema.methods.changedPasswordAfter = function(JWTTimestamp) {
   if (this.passwordChangedAt) {
     const changedTimestamp = parseInt(

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import '../Styles/Navbar.css';
@@ -8,14 +8,18 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <Link to="/" className="logo">LEARNIFY</Link>
-      <div className="nav-links">
-        <Link to="/">Home</Link>
-        <Link to="/mocktests">Mock Tests</Link>
-        <Link to="/leaderboard">Leaderboard</Link>
-        <Link to="/dashboard">Dashboard</Link>
-        <Link to="/dsa">DSA</Link>
-      </div>
+      <Link to="/" className="logo">
+        LEARN<span>IFY</span>
+      </Link>
+
+      <ul className="nav-links">
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/mocktests">Mock Tests</Link></li>
+        <li><Link to="/leaderboard">Leaderboard</Link></li>
+        <li><Link to="/dashboard">Dashboard</Link></li>
+        <li><Link to="/dsa">DSA</Link></li>
+      </ul>
+
       <div className="auth-buttons">
         {isAuthenticated ? (
           <>
@@ -24,37 +28,11 @@ export default function Navbar() {
           </>
         ) : (
           <>
-            <Link to="/signup" className="btn">Sign Up</Link>
-            <Link to="/signin" className="btn">Sign In</Link>
+            <Link to="/signup" className="btn signup">Sign Up</Link>
+            <Link to="/signin" className="btn signin">Sign In</Link>
           </>
         )}
       </div>
     </nav>
   );
 }
-=======
-import React from "react";
-import "./Navbar.css"; // Assuming you have a CSS file for styling
-const Navbar = () => {
-  return (
-    <nav className="navbar">
-      <div className="logo">
-        LEARN<span>IFY</span>
-      </div>
-      <ul className="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Mock Tests</a></li>
-        <li><a href="#">Leaderboard</a></li>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">DSA</a></li>
-      </ul>
-      <div className="auth-buttons">
-        <button className="signup">Sign Up</button>
-        <button className="signin">Sign In</button>
-      </div>
-    </nav>
-  );
-};
-
-export default Navbar;
->>>>>>> ed4d2209b2996fb09f96f64591b8d2341ccb34c7

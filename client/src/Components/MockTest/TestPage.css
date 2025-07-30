@@ -228,12 +228,131 @@
 
 /* Test Header */
 .test-header {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(30, 41, 59, 0.92);
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 20px;
-  position: sticky;
-  top: 0;
+  padding: 16px 10px;
+  border-radius: 0 0 18px 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 16px rgba(30,41,59,0.12);
   z-index: 100;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  /* Removed blur effect */
+}
+
+.progress-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.timer-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+}
+
+.timer {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  padding: 10px 22px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.18);
+  letter-spacing: 1px;
+}
+
+.progress-stats {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-item {
+  text-align: center;
+  min-width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 8px 18px;
+  margin: 0 6px;
+  box-shadow: 0 2px 8px rgba(30,41,59,0.10);
+  font-weight: 700;
+  font-size: 1.08rem;
+}
+
+.stat-item.answered {
+  background: linear-gradient(90deg, #3b82f6 60%, #60a5fa 100%);
+}
+.stat-item.marked {
+  background: linear-gradient(90deg, #f59e42 60%, #fbbf24 100%);
+}
+.stat-item.remaining {
+  background: linear-gradient(90deg, #64748b 60%, #94a3b8 100%);
+}
+
+.stat-value {
+  color: #fff !important;
+  font-size: 1.35rem !important;
+  font-weight: 900 !important;
+  margin-bottom: 0px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.25) !important;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+}
+
+.stat-label {
+  color: #fff !important;
+  font-size: 0.93rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600 !important;
+  text-shadow: none !important;
+  line-height: 1.1;
+}
+
+.timer {
+  color: #fff !important;
+  font-weight: 900;
+  text-shadow: 0 2px 8px #181830, 0 0 2px #000;
+}
+
+@media (max-width: 768px) {
+  .test-header {
+    padding: 10px 2px;
+    border-radius: 0 0 12px 12px;
+    max-width: 100vw;
+  }
+  .progress-section {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  .progress-stats {
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+  }
+  .timer-section {
+    justify-content: center;
+    margin-bottom: 0;
+  }
 }
 
 .test-info-bar {
@@ -273,26 +392,65 @@
 .progress-section {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 32px;
+  background: rgba(255,255,255,0.10);
+  border-radius: 14px;
+  padding: 12px 0;
+  margin-bottom: 8px;
 }
 
 .timer-section {
   display: flex;
   align-items: center;
+  justify-content: center;
+  min-width: 120px;
 }
 
 .timer {
   background: linear-gradient(135deg, #ef4444, #dc2626);
-  padding: 12px 20px;
+  padding: 12px 24px;
   border-radius: 12px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  color: #fff;
   box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+  letter-spacing: 1px;
+}
+
+.progress-stats {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-item {
+  text-align: center;
+  min-width: 80px;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #00e6ff;
+  margin-bottom: 2px;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 8px #181830;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #e0e7ef;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  text-shadow: 0 1px 8px #181830;
 }
 
 .timer-icon {

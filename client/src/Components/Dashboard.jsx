@@ -38,7 +38,25 @@ export default function Dashboard() {
       });
     } catch (err) {
       console.error('Error fetching dashboard data:', err);
-      setError(`Failed to load dashboard data: ${err.message}`);
+      if (err.response && err.response.status === 429) {
+        // Show mock data and a warning
+        setDashboardData({
+          stats: {
+            totalTestsAttempted: 12,
+            averageTestScore: 78,
+            overallAccuracy: 85,
+            totalTimeSpentDSA: 320,
+            totalTimeSpentMockTests: 180,
+            totalDSAProblemsSolved: 45,
+            currentStreak: 5
+          },
+          testHistory: { tests: [] },
+          calendarData: {}
+        });
+        setError('Too many requests. Showing sample data. Please wait a moment and try again for live data.');
+      } else {
+        setError(`Failed to load dashboard data: ${err.message}`);
+      }
     } finally {
       setLoading(false);
     }

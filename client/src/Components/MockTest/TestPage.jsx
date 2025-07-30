@@ -129,6 +129,9 @@ export default function TestPage() {
           submissionType: 'manual'
         });
 
+        // Dispatch dashboardDataUpdate event so dashboard refreshes
+        window.dispatchEvent(new Event('dashboardDataUpdate'));
+
         console.log('Test result submitted successfully to database');
       } catch (error) {
         console.error('Failed to submit test result:', error);

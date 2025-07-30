@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 
@@ -15,6 +14,8 @@ import MockTest from './Components/MockTest/MockTest';
 import SignUp from './Components/SignUp';
 import SignIn from './Components/SignIn';
 import ProtectedRoute from './Components/ProtectedRoute';
+import ForgotPassword from './components/ForgotPassword';
+import ResetPassword from './components/ResetPassword.jsx';
 
 function App() {
   return (
@@ -32,19 +33,10 @@ function App() {
         <Route path="/mocktests/*" element={<MockTest />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
       </Routes>
     </AuthProvider>
-=======
-import React from 'react';
-
-import HomePage from './Components/Homepage';
-
-function App() {
-  return (
-    <div className="App">
-      <HomePage />
-    </div>
->>>>>>> ed4d2209b2996fb09f96f64591b8d2341ccb34c7
   );
 }
 

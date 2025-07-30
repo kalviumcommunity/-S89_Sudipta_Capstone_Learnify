@@ -1,7 +1,7 @@
-<<<<<<< HEAD
 import React, { useState } from 'react';
-import '../Styles/HeroSection.css';
+import './HeroSection.css';
 import FeatureShowcase from './FeatureShowcase';
+import { Link } from 'react-router-dom';
 
 export default function HeroSection() {
   const [showFeatures, setShowFeatures] = useState(false);
@@ -16,13 +16,19 @@ export default function HeroSection() {
 
   return (
     <>
-      <div className="hero">
-        <h1>Welcome to Learnify</h1>
-        <p>Your one-stop platform for Mock Tests, DSA, and much more!</p>
-        <button className="hero-btn" onClick={handleExploreClick}>
-          Explore Now
-        </button>
-      </div>
+      <section className="hero-section">
+        <div className="hero-content">
+          <h1 className="tagline">Learn. Compete. Conquer.</h1>
+          <p className="description">
+            Your all-in-one platform for mastering concepts, cracking mock tests,
+            and climbing leaderboards — the smarter way to success.
+          </p>
+          <div className="cta-buttons">
+            <Link to="/mocktests" className="cta demo-btn">Take a Demo Test</Link>
+            <button className="cta explore-btn" onClick={handleExploreClick}>Explore Features</button>
+          </div>
+        </div>
+      </section>
 
       {showFeatures && (
         <FeatureShowcase onClose={handleCloseFeatures} />
@@ -30,26 +36,3 @@ export default function HeroSection() {
     </>
   );
 }
-=======
-import React from "react";
-import "./HeroSection.css"; // Assuming you have a CSS file for styling
-const HeroSection = () => {
-  return (
-    <section className="hero-section">
-      <div className="hero-content">
-        <h1 className="tagline">Learn. Compete. Conquer.</h1>
-        <p className="description">
-          Your all-in-one platform for mastering concepts, cracking mock tests,
-          and climbing leaderboards — the smarter way to success.
-        </p>
-        <div className="cta-buttons">
-          <button className="cta signup-btn">Sign Up for free</button>
-          <button className="cta demo-btn">Take a Demo Test</button>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default HeroSection;
->>>>>>> ed4d2209b2996fb09f96f64591b8d2341ccb34c7

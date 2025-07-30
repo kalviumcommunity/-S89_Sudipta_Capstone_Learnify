@@ -18,10 +18,17 @@
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
+  justify-items: center;
+  min-height: 400px;
 }
 
 .hero-text {
   max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
 }
 
 .hero-title {
@@ -98,8 +105,10 @@
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 20px;
-  padding: 24px;
-  width: 300px;
+  padding: 24px 20px 24px 20px;
+  width: 280px;
+  max-width: 100%;
+  box-sizing: border-box;
   animation: float 6s ease-in-out infinite;
 }
 
@@ -131,6 +140,11 @@
 
 .progress-section {
   margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .progress-bar {
@@ -138,7 +152,10 @@
   height: 8px;
   border-radius: 4px;
   overflow: hidden;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
 }
 
 .progress-fill {
@@ -151,6 +168,8 @@
 .progress-text {
   color: #b8b8d1;
   font-size: 0.9rem;
+  text-align: center;
+  margin-top: 12px;
 }
 
 /* Stats Section */

@@ -330,6 +330,10 @@ router.post('/submit-test-result', catchAsync(async (req, res) => {
     user.lastActive = new Date();
     await user.save();
 
+    // Clear dashboard stats cache for this user so next fetch is fresh
+    const statsCacheKey = generateUserCacheKey(userId, 'dashboard:stats');
+    cache.del(statsCacheKey);
+
     res.json({
       message: 'Test result submitted successfully',
       testResult: {

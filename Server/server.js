@@ -19,6 +19,7 @@ const dashboardRoutes = require('./routes/dashboardRoutes');
 
 const leaderboardRoutes = require('./routes/leaderboardRoutes');
 const dsaRoutes = require('./routes/dsaRoutes');
+const chatRoutes = require('./routes/chatRoutes');
 
 const app = express();
 
@@ -138,6 +139,7 @@ app.use('/api/questions', questionsRoute);
 app.use('/api/dashboard', dashboardRoutes);
 app.use('/api/leaderboard', leaderboardRoutes);
 app.use('/api/dsa', dsaRoutes);
+app.use('/api/chat', chatRoutes);
 
 app.get('/', (req, res) => {
   res.status(200).send({ msg: 'This is my backend' });

@@ -9,6 +9,7 @@ const { catchAsync, AppError } = require('../middleware/errorHandler');
 const { sendSuccess, sendError } = require('../utils/response');
 const { HTTP_STATUS, ERROR_MESSAGES, SUCCESS_MESSAGES } = require('../constants');
 const logger = require('../utils/logger');
+const { forgotPassword } = require('../controllers/authController');
 
 
 router.post('/register', validateRegistration, catchAsync(async (req, res) => {
@@ -43,6 +44,8 @@ router.post('/login', validateLogin, catchAsync(async (req, res) => {
   if (!user || !(await user.correctPassword(password, user.password))) {
     throw new AppError(ERROR_MESSAGES.INVALID_CREDENTIALS, HTTP_STATUS.UNAUTHORIZED);
   }
+
+  await user.updateStats();
 
   const token = generateToken(user._id);
   user.password = undefined;
@@ -132,22 +135,6 @@ router.post('/logout', (req, res) => {
 });
 
 // 🔑 Forgot Password
-router.post('/forgot-password', catchAsync(async (req, res) => {
-  const { email } = req.body;
-  if (!email) {
-    return sendError(res, HTTP_STATUS.BAD_REQUEST, 'Email is required');
-  }
-  const user = await User.findOne({ email });
-  if (!user) {
-    // For security, don't reveal if the email exists
-    return sendSuccess(res, HTTP_STATUS.OK, 'If that email is registered, a reset link has been sent.', {
-      message: 'If that email is registered, a reset link has been sent.'
-    });
-  }
-  // Here you would generate a token and send an email. For now, just simulate success.
-  return sendSuccess(res, HTTP_STATUS.OK, 'If that email is registered, a reset link has been sent.', {
-    message: 'If that email is registered, a reset link has been sent.'
-  });
-}));
+router.post('/forgot-password', catchAsync(forgotPassword));
 
 module.exports = router;

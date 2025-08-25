@@ -23,8 +23,8 @@ export default function ResultPage() {
       // If user is authenticated, fetch historical data
       if (isAuthenticated && user && dashboardAPI) {
         try {
-          const response = await dashboardAPI.getTestResults();
-          if (response.success) {
+          const response = await dashboardAPI.getTestHistory();
+          if (response.success && Array.isArray(response.data)) {
             // Filter results for the same exam and chapter
             const chapterHistory = response.data.filter(test =>
               test.exam === examId &&

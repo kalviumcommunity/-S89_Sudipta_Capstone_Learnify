@@ -62,4 +62,61 @@ userSchema.methods.changedPasswordAfter = function(JWTTimestamp) {
   return false;
 };
 
+userSchema.methods.updateStats = async function(testResult) {
+    // Always update last active date
+    this.lastActive = new Date();
+
+    // Update test and time stats
+    if (testResult) {
+        if (testResult.testType === 'mocktest') {
+            this.totalTestsAttempted = (this.totalTestsAttempted || 0) + 1;
+            this.totalTimeSpentMockTests = (this.totalTimeSpentMockTests || 0) + Math.round(testResult.timeTaken / 60);
+        } else if (testResult.testType === 'dsa') {
+            this.totalDSAProblemsAttempted = (this.totalDSAProblemsAttempted || 0) + 1;
+            this.totalTimeSpentDSA = (this.totalTimeSpentDSA || 0) + Math.round(testResult.timeTaken / 60);
+            if (testResult.accuracy >= 50) {
+                this.totalDSAProblemsSolved = (this.totalDSAProblemsSolved || 0) + 1;
+            }
+        }
+
+        // Recalculate overall accuracy
+        const totalAttempts = (this.totalTestsAttempted || 0) + (this.totalDSAProblemsAttempted || 0);
+        if (totalAttempts > 0) {
+            const currentTotalAccuracy = (this.overallAccuracy || 0) * (totalAttempts - 1);
+            this.overallAccuracy = (currentTotalAccuracy + testResult.accuracy) / totalAttempts;
+        } else {
+            this.overallAccuracy = testResult.accuracy;
+        }
+    }
+
+    // Update streak
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    if (this.lastActivityDate) {
+        const lastActivity = new Date(this.lastActivityDate);
+        lastActivity.setHours(0, 0, 0, 0);
+
+        const diffTime = today.getTime() - lastActivity.getTime();
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+        if (diffDays === 1) {
+            this.currentStreak = (this.currentStreak || 0) + 1;
+        } else if (diffDays > 1) {
+            this.currentStreak = 1;
+        }
+        // If diffDays is 0, do nothing
+    } else {
+        this.currentStreak = 1;
+    }
+
+    if ((this.currentStreak || 0) > (this.longestStreak || 0)) {
+        this.longestStreak = this.currentStreak;
+    }
+
+    this.lastActivityDate = today;
+
+    return this.save();
+};
+
 module.exports = mongoose.model('User', userSchema);

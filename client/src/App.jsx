@@ -14,8 +14,8 @@ import MockTest from './Components/MockTest/MockTest';
 import SignUp from './Components/SignUp';
 import SignIn from './Components/SignIn';
 import ProtectedRoute from './Components/ProtectedRoute';
-import ForgotPassword from './components/ForgotPassword';
-import ResetPassword from './components/ResetPassword.jsx';
+import ForgotPassword from './Components/ForgotPassword';
+import ResetPassword from './Components/ResetPassword.jsx';
 
 function App() {
   return (

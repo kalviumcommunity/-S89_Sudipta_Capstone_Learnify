@@ -80,11 +80,12 @@ export default function TestPage() {
 
   const handleSubmit = useCallback(async () => {
     const total = questions.length;
+    const answeredCount = Object.keys(answers).length;
     const correct = questions.filter((q, i) => answers[i] === q.correctAnswer).length;
-    const incorrect = total - correct;
-    const skipped = total - Object.keys(answers).length;
+    const incorrect = answeredCount - correct;
+    const skipped = total - answeredCount;
     const timeTaken = 20 * 60 - timeLeft;
-    const accuracy = parseFloat(((correct / total) * 100).toFixed(2));
+    const accuracy = total > 0 ? parseFloat(((correct / total) * 100).toFixed(2)) : 0;
 
     const result = {
       exam: examId,

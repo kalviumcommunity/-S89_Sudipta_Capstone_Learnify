@@ -144,6 +144,7 @@ export const AuthProvider = ({ children }) => {
         setIsAuthenticated(true);
         // Set the token in axios headers
         axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+        setIsAuthenticated(true);
       } else {
         // Check if we're on the dashboard page (might be coming from Google OAuth without token)
         if (window.location.pathname === '/dashboard') {
@@ -172,7 +173,8 @@ export const AuthProvider = ({ children }) => {
   };
 
   // Login function
-  const login = async (email, password) => {
+const login = async (email, password) => {
+    setLoading(true); // Add loading state
     try {
       const response = await axios.post('/auth/login', {
         email,
@@ -216,11 +218,14 @@ export const AuthProvider = ({ children }) => {
         success: false,
         message: errorMessage
       };
+    } finally {
+      setLoading(false); // Reset loading state
     }
   };
 
   // Register function
   const register = async (name, email, password) => {
+    setLoading(true); // Add loading state
     try {
       const response = await axios.post('/auth/register', {
         name,
@@ -265,6 +270,8 @@ export const AuthProvider = ({ children }) => {
         success: false,
         message: errorMessage
       };
+    } finally {
+      setLoading(false); // Reset loading state
     }
   };
 
@@ -343,6 +350,7 @@ export const AuthProvider = ({ children }) => {
       if (!user?._id) throw new Error('User not authenticated');
 
       try {
+        console.log('Submitting test result:', testResultData);
         const response = await axios.post('/dashboard/submit-test-result', testResultData);
 
         // Trigger a dashboard data refresh by dispatching a custom event

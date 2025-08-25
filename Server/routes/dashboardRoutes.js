@@ -15,7 +15,7 @@ const logger = require('../utils/logger');
 router.use(authenticateToken);
 
 // GET /api/dashboard/stats - Get user dashboard statistics
-router.get('/stats', cacheMiddleware(300), catchAsync(async (req, res) => {
+router.get('/stats', catchAsync(async (req, res) => {
   const userId = req.user._id;
     
     // Get user with basic stats
@@ -221,133 +221,96 @@ router.get('/calendar', catchAsync(async (req, res) => {
 }));
 
 // POST /api/dashboard/submit-test-result - Submit a test result
-router.post('/submit-test-result', catchAsync(async (req, res) => {
+router.post('/submit-test-result', async (req, res) => {
   try {
     const userId = req.user._id;
-    const {
-      testType,
-      exam,
-      subject,
-      chapter,
-      dsaProblemId,
-      dsaTopic,
-      dsaDifficulty,
-      totalQuestions,
-      correctAnswers,
-      incorrectAnswers,
-      skippedQuestions = 0,
-      accuracy,
-      timeTaken,
-      score,
-      maxScore,
-      answers = [],
-      submissionType = 'manual'
-    } = req.body;
+    const resultData = req.body;
 
-    // Validate required fields
-    if (!testType || !totalQuestions || correctAnswers === undefined || incorrectAnswers === undefined || !accuracy || !timeTaken || !score || !maxScore) {
-      return res.status(400).json({ message: 'Missing required test result fields' });
+    logger.info(`Received test submission for user: ${userId}`, { data: resultData });
+
+    // Enhanced Validation
+    const { testType, totalQuestions, correctAnswers, incorrectAnswers, skippedQuestions, accuracy, timeTaken, score, maxScore, answers } = resultData;
+
+    if (
+      !testType ||
+      typeof totalQuestions !== 'number' ||
+      typeof correctAnswers !== 'number' ||
+      typeof incorrectAnswers !== 'number' ||
+      typeof accuracy !== 'number' ||
+      typeof timeTaken !== 'number' ||
+      typeof score !== 'number' ||
+      typeof maxScore !== 'number' ||
+      typeof skippedQuestions !== 'number'
+    ) {
+      logger.warn(`Validation failed for user ${userId}: Invalid payload structure or types`);
+      return res.status(HTTP_STATUS.BAD_REQUEST).json({ message: 'Invalid payload structure or types' });
+    }
+
+    if (answers && !Array.isArray(answers)) {
+      logger.warn(`Validation failed for user ${userId}: 'answers' field must be an array.`);
+      return res.status(HTTP_STATUS.BAD_REQUEST).json({ message: "'answers' field must be an array." });
     }
 
     // Create the test result
     const testResult = new TestResult({
-      user: userId,
-      testType,
-      exam,
-      subject,
-      chapter,
-      dsaProblemId,
-      dsaTopic,
-      dsaDifficulty,
-      totalQuestions,
-      correctAnswers,
-      incorrectAnswers,
-      skippedQuestions,
-      accuracy,
-      timeTaken,
-      score,
-      maxScore,
-      answers,
-      submissionType,
-      averageTimePerQuestion: timeTaken / totalQuestions,
-      testDate: new Date()
+        user: userId,
+        ...resultData,
+        testDate: new Date(),
+        averageTimePerQuestion: resultData.timeTaken / resultData.totalQuestions,
     });
 
     await testResult.save();
+    logger.info(`Test result saved for user: ${userId}, result ID: ${testResult._id}`);
 
     // Record activity in UserActivity
     const activity = await UserActivity.getOrCreateActivity(userId, new Date());
-
     const activityDetails = {
-      exam,
-      subject,
-      chapter,
-      dsaTopic,
-      dsaDifficulty,
-      score,
-      accuracy,
-      timeTaken
+        exam: resultData.exam,
+        subject: resultData.subject,
+        chapter: resultData.chapter,
+        dsaTopic: resultData.dsaTopic,
+        dsaDifficulty: resultData.dsaDifficulty,
+        score: resultData.score,
+        accuracy: resultData.accuracy,
+        timeTaken: resultData.timeTaken
     };
 
-    if (testType === 'mocktest') {
-      activity.addActivity('mocktest_completed', activityDetails);
-    } else if (testType === 'dsa') {
-      activity.addActivity('dsa_attempted', activityDetails);
-      if (accuracy >= 50) { // Consider it solved if accuracy is 50% or higher
-        activity.addActivity('dsa_solved', activityDetails);
-      }
+    if (resultData.testType === 'mocktest') {
+        activity.addActivity('mocktest_completed', activityDetails);
+    } else if (resultData.testType === 'dsa') {
+        activity.addActivity('dsa_attempted', activityDetails);
+        if (resultData.accuracy >= 50) {
+            activity.addActivity('dsa_solved', activityDetails);
+        }
     }
-
     await activity.save();
+    logger.info(`User activity updated for user: ${userId}`);
 
     // Update user's overall stats
     const user = await User.findById(userId);
-
-    // Get current total tests before incrementing for accuracy calculation
-    const currentTotalTests = user.totalTestsAttempted + user.totalDSAProblemsAttempted;
-
-    switch(testType) {
-      case 'mocktest':
-        user.totalTestsAttempted += 1;
-        user.totalTimeSpentMockTests += Math.round(timeTaken / 60);
-        break;
-      case 'dsa':
-        user.totalDSAProblemsAttempted += 1;
-        user.totalTimeSpentDSA += Math.round(timeTaken / 60);
-        if (accuracy >= 50) {
-          user.totalDSAProblemsSolved += 1;
-        }
-        break;
-    }
-
-    // Update overall accuracy (weighted average)
-    if (currentTotalTests > 0) {
-      user.overallAccuracy = ((user.overallAccuracy * currentTotalTests) + accuracy) / (currentTotalTests + 1);
+    if (user) {
+        await user.updateStats(testResult);
+        logger.info(`User stats updated for user: ${userId}`);
     } else {
-      user.overallAccuracy = accuracy;
+        logger.error(`User not found while updating stats: ${userId}`);
     }
 
-    user.lastActive = new Date();
-    await user.save();
-
-    // Clear dashboard stats cache for this user so next fetch is fresh
+    // Clear dashboard stats cache
     const statsCacheKey = generateUserCacheKey(userId, 'dashboard:stats');
     cache.del(statsCacheKey);
+    logger.info(`Cache cleared for user: ${userId}`);
 
-    res.json({
-      message: 'Test result submitted successfully',
-      testResult: {
+    return sendSuccess(res, HTTP_STATUS.OK, SUCCESS_MESSAGES.TEST_SUBMITTED, {
         id: testResult._id,
         accuracy: testResult.accuracy,
         score: testResult.score,
         timeTaken: testResult.timeTaken
-      }
     });
-  } catch (error) {
-    console.error('Error submitting test result:', error);
-    res.status(500).json({ message: 'Server error', error: error.message });
+  } catch (err) {
+    logger.error('Error in submit-test-result:', err);
+    res.status(500).json({ error: 'Internal Server Error' });
   }
-}));
+});
 
 // POST /api/dashboard/record-activity - Record a new activity
 router.post('/record-activity', catchAsync(async (req, res) => {

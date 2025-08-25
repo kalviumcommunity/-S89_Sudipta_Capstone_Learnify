@@ -23,13 +23,16 @@ const ProblemSolver = ({ problem, topicId, onComplete }) => {
       
       // Update progress
       const updatedProgress = await updateProgress(problem._id, isCorrect, timeTaken);
-      
+
       setResult({
         success: isCorrect,
         message: isCorrect ? 'Correct! Well done!' : 'Incorrect. Try again!',
         timeTaken,
         progress: updatedProgress
       });
+
+      // Trigger dashboard data refresh since DSA stats may have changed
+      window.dispatchEvent(new CustomEvent('dashboardDataUpdate'));
 
       if (onComplete) {
         onComplete(isCorrect, updatedProgress);

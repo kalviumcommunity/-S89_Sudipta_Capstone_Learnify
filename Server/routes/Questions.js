@@ -18,6 +18,15 @@ router.get('/', async (req, res) => {
   const { exam, chapter, limit = 30 } = req.query;
 
   try {
+    // Check if required parameters are provided
+    if (!exam || !chapter) {
+      return res.status(400).json({
+        error: 'Missing required parameters',
+        message: 'Both exam and chapter parameters are required',
+        example: '/api/questions?exam=JEE&chapter=algebra'
+      });
+    }
+
     const chapterTitle = kebabToChapterName(chapter);
 
     console.log(`Fetching questions for: exam=${exam}, chapter=${chapterTitle}`);

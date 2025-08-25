@@ -3,7 +3,7 @@ const { DSATopic, DSAProblem } = require('../models/DSA');
 require('dotenv').config();
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/learnify', {
+mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/learnify', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

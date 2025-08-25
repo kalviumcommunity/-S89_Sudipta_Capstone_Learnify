@@ -136,32 +136,44 @@ export default function SignUp() {
             <div className="signup-or">OR</div>
             <form onSubmit={handleSubmit}>
               <div className="signup-form-group">
+                <label htmlFor="signup-name">Full Name</label>
                 <input
+                  id="signup-name"
+                  name="name"
                   type="text"
                   placeholder="Your Name"
                   value={name}
                   onChange={e => setName(e.target.value)}
                   required
+                  aria-describedby="name-help"
                 />
               </div>
               <div className="signup-form-group">
+                <label htmlFor="signup-email">Email Address</label>
                 <input
+                  id="signup-email"
+                  name="email"
                   type="email"
                   placeholder="Your Email"
                   value={email}
                   onChange={e => setEmail(e.target.value)}
                   required
+                  aria-describedby="email-help"
                 />
               </div>
               <div className="signup-form-group">
+                <label htmlFor="signup-password">Password</label>
                 <input
+                  id="signup-password"
+                  name="password"
                   type="password"
                   placeholder="Password"
                   value={password}
                   onChange={e => setPassword(e.target.value)}
                   required
+                  aria-describedby="password-help"
                 />
-                <div className="signup-password-hint">
+                <div id="password-help" className="signup-password-hint">
                   Must be at least 6 characters with uppercase, lowercase, and number
                 </div>
               </div>

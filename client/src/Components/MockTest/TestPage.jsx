@@ -130,9 +130,8 @@ export default function TestPage() {
           submissionType: 'manual'
         });
 
-        // Dispatch dashboardDataUpdate event so dashboard refreshes
-        window.dispatchEvent(new Event('dashboardDataUpdate'));
-
+        // Force clear any cached data and trigger immediate refresh
+        window.dispatchEvent(new CustomEvent('dashboardDataUpdate'));
         console.log('Test result submitted successfully to database');
       } catch (error) {
         console.error('Failed to submit test result:', error);

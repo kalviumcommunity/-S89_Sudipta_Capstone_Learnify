@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useCallback, useEffect, useRef } from "react";
 import { useAuth } from "../context/AuthContext";
 import "../Styles/Dashboard.css";
 
@@ -14,13 +14,38 @@ export default function Dashboard() {
   const [studyDistributionPeriod, setStudyDistributionPeriod] = useState('Monthly');
   const [studyStreakPeriod, setStudyStreakPeriod] = useState('Weekly');
   const [refreshing, setRefreshing] = useState(false);
+  const [retryCountdown, setRetryCountdown] = useState(0);
 
-  const fetchDashboardData = useCallback(async () => {
+  // Refs for debouncing and request management
+  const debounceTimeoutRef = useRef(null);
+  const lastFetchTimeRef = useRef(0);
+  const isCurrentlyFetchingRef = useRef(false);
+  const retryTimeoutRef = useRef(null);
+
+  const fetchDashboardData = useCallback(async (force = false) => {
     if (!isAuthenticated || !user || !dashboardAPI) {
       return;
     }
 
+    // Prevent duplicate requests
+    if (isCurrentlyFetchingRef.current && !force) {
+      console.log('Dashboard data fetch already in progress, skipping...');
+      return;
+    }
+
+    // Debouncing: don't fetch if we just fetched recently (unless forced)
+    const now = Date.now();
+    const timeSinceLastFetch = now - lastFetchTimeRef.current;
+    const minInterval = 2000; // Minimum 2 seconds between fetches
+
+    if (timeSinceLastFetch < minInterval && !force) {
+      console.log('Dashboard data fetched recently, skipping...');
+      return;
+    }
+
     try {
+      isCurrentlyFetchingRef.current = true;
+      lastFetchTimeRef.current = now;
       setLoading(true);
       setError(null);
 
@@ -31,8 +56,10 @@ export default function Dashboard() {
         dashboardAPI.getCalendarData()
       ]);
 
+      console.log('Dashboard stats received:', stats);
+      console.log('Stats data:', stats.data);
       setDashboardData({
-        stats,
+        stats: stats.data, // Extract the actual data from the response
         testHistory,
         calendarData
       });
@@ -53,14 +80,53 @@ export default function Dashboard() {
           testHistory: { tests: [] },
           calendarData: {}
         });
-        setError('Too many requests. Showing sample data. Please wait a moment and try again for live data.');
+        setError({
+          type: 'rate_limit',
+          message: 'Too many requests. Showing sample data. Please wait a moment and try again for live data.',
+          retryAfter: 30 // seconds
+        });
+
+        // Start countdown timer
+        setRetryCountdown(30);
+        const countdownInterval = setInterval(() => {
+          setRetryCountdown(prev => {
+            if (prev <= 1) {
+              clearInterval(countdownInterval);
+              // Auto-retry when countdown reaches zero
+              setTimeout(() => {
+                setError(null);
+                fetchDashboardData(true);
+              }, 1000);
+              return 0;
+            }
+            return prev - 1;
+          });
+        }, 1000);
       } else {
-        setError(`Failed to load dashboard data: ${err.message}`);
+        setError({
+          type: 'general',
+          message: `Failed to load dashboard data: ${err.message}`,
+          retryAfter: null
+        });
       }
     } finally {
       setLoading(false);
+      isCurrentlyFetchingRef.current = false;
     }
   }, [isAuthenticated, user, dashboardAPI]);
+
+  // Debounced version for event handlers
+  const debouncedFetchDashboardData = useCallback(() => {
+    // Clear any existing timeout
+    if (debounceTimeoutRef.current) {
+      clearTimeout(debounceTimeoutRef.current);
+    }
+
+    // Set a new timeout
+    debounceTimeoutRef.current = setTimeout(() => {
+      fetchDashboardData();
+    }, 500); // 500ms debounce
+  }, [fetchDashboardData]);
 
   // Load dashboard data when component mounts and user is authenticated
   useEffect(() => {
@@ -73,7 +139,7 @@ export default function Dashboard() {
   useEffect(() => {
     const handleVisibilityChange = () => {
       if (!document.hidden && isAuthenticated && user && dashboardAPI) {
-        fetchDashboardData();
+        debouncedFetchDashboardData();
       }
     };
 
@@ -81,14 +147,19 @@ export default function Dashboard() {
 
     return () => {
       document.removeEventListener('visibilitychange', handleVisibilityChange);
+      // Clear debounce timeout on cleanup
+      if (debounceTimeoutRef.current) {
+        clearTimeout(debounceTimeoutRef.current);
+      }
     };
-  }, [isAuthenticated, user, dashboardAPI, fetchDashboardData]);
+  }, [isAuthenticated, user, dashboardAPI, debouncedFetchDashboardData]);
 
   // Listen for dashboard data updates (e.g., after test submission)
   useEffect(() => {
     const handleDashboardUpdate = () => {
       if (isAuthenticated && user && dashboardAPI) {
-        fetchDashboardData();
+        console.log('Dashboard update event received, forcing refresh...');
+        fetchDashboardData(true); // Force refresh bypassing cache
       }
     };
 
@@ -103,7 +174,8 @@ export default function Dashboard() {
   const handleRefresh = async () => {
     setRefreshing(true);
     try {
-      await fetchDashboardData();
+      // Force refresh bypasses debouncing and duplicate request prevention
+      await fetchDashboardData(true);
     } finally {
       setRefreshing(false);
     }
@@ -122,12 +194,12 @@ export default function Dashboard() {
   }
 
   // Show error state
-  if (error) {
+  if (error && error.type !== 'rate_limit') {
     return (
       <div className="dashboard-container">
         <div className="error-state">
           <h2>⚠️ Error</h2>
-          <p>{error}</p>
+          <p>{typeof error === 'string' ? error : error.message}</p>
           <button onClick={fetchDashboardData} className="btn btn-primary">
             Try Again
           </button>
@@ -156,18 +228,42 @@ export default function Dashboard() {
         </div>
 
         <div className="header-actions">
-          <button className="btn-filter">Filter</button>
-          <button className="btn-export">Export</button>
+          <button className="btn-filter" aria-label="Filter dashboard data">Filter</button>
+          <button className="btn-export" aria-label="Export dashboard data">Export</button>
           <button
             onClick={handleRefresh}
             className="btn-refresh"
             title="Refresh Dashboard"
+            aria-label="Refresh dashboard data"
             disabled={refreshing}
           >
             {refreshing ? 'Refreshing...' : 'Refresh'}
           </button>
         </div>
       </div>
+
+      {/* Rate Limit Warning Banner */}
+      {error && error.type === 'rate_limit' && (
+        <div className="rate-limit-banner">
+          <div className="banner-content">
+            <span className="banner-icon">⚠️</span>
+            <div className="banner-text">
+              <strong>Rate Limit Reached</strong>
+              <p>{error.message}</p>
+              {retryCountdown > 0 && (
+                <p className="countdown">Auto-retry in {retryCountdown} seconds...</p>
+              )}
+            </div>
+            <button
+              onClick={() => fetchDashboardData(true)}
+              className="banner-retry-btn"
+              disabled={retryCountdown > 0}
+            >
+              {retryCountdown > 0 ? `Retry (${retryCountdown}s)` : 'Retry Now'}
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Dashboard Content */}
       <div className="dashboard-content">
@@ -178,7 +274,7 @@ export default function Dashboard() {
               <span className="stat-label">Test Attempts</span>
               <div className="stat-info">i</div>
             </div>
-            <div className="stat-value">{dashboardData?.stats?.totalTestsAttempted || 0}</div>
+            <div className="stat-value">{(dashboardData?.stats?.totalTestsAttempted || 0) + (dashboardData?.stats?.totalDSAProblemsAttempted || 0)}</div>
           </div>
 
           <div className="stat-card">
@@ -207,9 +303,9 @@ export default function Dashboard() {
               <div className="card-header">
                 <h3>Performance Overview</h3>
                 <div className="card-actions">
-                  <button className="btn-filter">Filter</button>
-                  <button className="btn-sort">Sort</button>
-                  <button className="btn-more">...</button>
+                  <button className="btn-filter" aria-label="Filter performance data">Filter</button>
+                  <button className="btn-sort" aria-label="Sort performance data">Sort</button>
+                  <button className="btn-more" aria-label="More options">⋯</button>
                 </div>
               </div>
               <div className="performance-stats">
@@ -309,7 +405,7 @@ export default function Dashboard() {
             <div className="card recent-integrations">
               <div className="card-header">
                 <h3>Recent Activity</h3>
-                <button className="btn-see-all">See All</button>
+                <button className="btn-see-all" aria-label="See all recent activities">See All</button>
               </div>
               <div className="integrations-list">
                 <div className="integration-item">

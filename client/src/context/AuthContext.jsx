@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 
 const AuthContext = createContext();
@@ -17,6 +17,10 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  // Request caching and deduplication
+  const requestCacheRef = useRef(new Map());
+  const pendingRequestsRef = useRef(new Map());
 
   // Configure axios defaults
   // Using relative URLs since we have proxy configured in vite.config.js
@@ -302,6 +306,49 @@ const login = async (email, password) => {
     window.location.href = `/api/auth/google`;
   };
 
+  // Helper function for cached requests with deduplication
+  const cachedRequest = async (url, options = {}) => {
+    const cacheKey = `${url}?${JSON.stringify(options)}`;
+    const now = Date.now();
+    const cacheTimeout = 30000; // 30 seconds cache
+
+    // Check if we have a cached result that's still valid
+    const cached = requestCacheRef.current.get(cacheKey);
+    if (cached && (now - cached.timestamp) < cacheTimeout) {
+      console.log(`Using cached data for ${url}`);
+      return cached.data;
+    }
+
+    // Check if there's already a pending request for this URL
+    if (pendingRequestsRef.current.has(cacheKey)) {
+      console.log(`Waiting for pending request for ${url}`);
+      return pendingRequestsRef.current.get(cacheKey);
+    }
+
+    // Make the request and cache the promise
+    const requestPromise = axios.get(url, options).then(response => {
+      // Cache the successful response
+      requestCacheRef.current.set(cacheKey, {
+        data: response.data,
+        timestamp: now
+      });
+
+      // Remove from pending requests
+      pendingRequestsRef.current.delete(cacheKey);
+
+      return response.data;
+    }).catch(error => {
+      // Remove from pending requests on error
+      pendingRequestsRef.current.delete(cacheKey);
+      throw error;
+    });
+
+    // Store the promise in pending requests
+    pendingRequestsRef.current.set(cacheKey, requestPromise);
+
+    return requestPromise;
+  };
+
   // Dashboard API functions
   const dashboardAPI = {
     // Get user dashboard statistics
@@ -309,8 +356,7 @@ const login = async (email, password) => {
       if (!user?._id) throw new Error('User not authenticated');
 
       try {
-        const response = await axios.get('/dashboard/stats');
-        return response.data;
+        return await cachedRequest('/dashboard/stats');
       } catch (error) {
         console.error('Error fetching dashboard stats:', error);
         throw error;
@@ -323,8 +369,7 @@ const login = async (email, password) => {
 
       try {
         const params = new URLSearchParams(filters);
-        const response = await axios.get(`/dashboard/test-history?${params.toString()}`);
-        return response.data;
+        return await cachedRequest(`/dashboard/test-history?${params.toString()}`);
       } catch (error) {
         console.error('Error fetching test history:', error);
         throw error;
@@ -337,8 +382,7 @@ const login = async (email, password) => {
 
       try {
         const params = new URLSearchParams(filters);
-        const response = await axios.get(`/dashboard/calendar?${params.toString()}`);
-        return response.data;
+        return await cachedRequest(`/dashboard/calendar?${params.toString()}`);
       } catch (error) {
         console.error('Error fetching calendar data:', error);
         throw error;
@@ -352,6 +396,10 @@ const login = async (email, password) => {
       try {
         console.log('Submitting test result:', testResultData);
         const response = await axios.post('/dashboard/submit-test-result', testResultData);
+
+        // Clear cache since data has changed
+        requestCacheRef.current.clear();
+        pendingRequestsRef.current.clear();
 
         // Trigger a dashboard data refresh by dispatching a custom event
         window.dispatchEvent(new CustomEvent('dashboardDataUpdate'));

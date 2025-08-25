@@ -17,6 +17,7 @@ const User = require('../models/User');
 const { HTTP_STATUS, SUCCESS_MESSAGES, ERROR_MESSAGES } = require('../constants');
 const { sendSuccess, sendError } = require('../utils/response');
 const { getPaginationParams } = require('../utils/pagination');
+const { generateUserCacheKey, cache } = require('../utils/cache');
 const logger = require('../utils/logger');
 
 // GET /api/dsa/topics - Get all DSA topics with user progress (if authenticated)
@@ -443,7 +444,22 @@ async function updateUserProgressAfterSubmission(userId, problemId, isAccepted) 
     });
     
     await testResult.save();
-    
+
+    // Update user's overall stats using the updateStats method
+    const user = await User.findById(userId);
+    if (user) {
+      await user.updateStats(testResult);
+      await user.save();
+      logger.info(`User stats updated for DSA submission: ${userId}`);
+
+      // Clear dashboard stats cache to ensure fresh data
+      const statsCacheKey = generateUserCacheKey(userId, 'dashboard:stats');
+      cache.delete(statsCacheKey);
+      logger.info(`Dashboard cache cleared for user: ${userId}`);
+    } else {
+      logger.error(`User not found while updating DSA stats: ${userId}`);
+    }
+
   } catch (error) {
     logger.error('Error updating user progress:', error);
   }
@@ -818,6 +834,11 @@ router.post('/progress/update', authenticateToken, async (req, res) => {
       }
 
       await user.save();
+
+    // Clear dashboard stats cache to ensure fresh data
+    const statsCacheKey = generateUserCacheKey(userId, 'dashboard:stats');
+    cache.delete(statsCacheKey);
+    logger.info(`Dashboard cache cleared for user: ${userId}`);
     }
 
     sendSuccess(res, HTTP_STATUS.OK, 'Progress updated successfully', {

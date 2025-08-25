@@ -200,8 +200,11 @@ string solution(string input) {
         code,
         language
       });
-      
+
       setSubmission(response.data.data.submission);
+
+      // Trigger dashboard data refresh since DSA stats may have changed
+      window.dispatchEvent(new CustomEvent('dashboardDataUpdate'));
     } catch (err) {
       console.error('Error submitting solution:', err);
       alert('Failed to submit solution. Please try again.');
@@ -345,10 +348,14 @@ string solution(string input) {
         <div className="code-editor-section">
           <div className="editor-header">
             <h3>Solution</h3>
-            <select 
-              value={language} 
+            <label htmlFor="language-select" className="sr-only">Programming Language</label>
+            <select
+              id="language-select"
+              name="language"
+              value={language}
               onChange={(e) => handleLanguageChange(e.target.value)}
               className="language-select"
+              aria-label="Select programming language"
             >
               <option value="javascript">JavaScript</option>
               <option value="python">Python</option>
@@ -357,12 +364,16 @@ string solution(string input) {
             </select>
           </div>
 
+          <label htmlFor="code-editor" className="sr-only">Code Editor</label>
           <textarea
+            id="code-editor"
+            name="code"
             value={code}
             onChange={(e) => setCode(e.target.value)}
             className="code-editor"
             placeholder="Write your solution here..."
             rows={15}
+            aria-label="Code editor for writing solution"
           />
 
           <div className="editor-actions">

@@ -218,19 +218,27 @@ const ProblemList = () => {
       <div className="filters-section">
         <div className="filters-row">
           <div className="search-box">
+            <label htmlFor="problem-search" className="sr-only">Search problems</label>
             <input
+              id="problem-search"
+              name="search"
               type="text"
               placeholder="Search problems..."
               value={filters.search}
               onChange={(e) => handleFilterChange('search', e.target.value)}
               className="search-input"
+              aria-label="Search problems"
             />
           </div>
-          
+
+          <label htmlFor="topic-filter" className="sr-only">Filter by topic</label>
           <select
+            id="topic-filter"
+            name="topic"
             value={filters.topic}
             onChange={(e) => handleFilterChange('topic', e.target.value)}
             className="filter-select"
+            aria-label="Filter by topic"
           >
             <option value="">All Topics</option>
             {topics.map(topic => (

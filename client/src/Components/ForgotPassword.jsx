@@ -32,7 +32,7 @@ const ForgotPassword = () => {
   return (
     <div style={{ maxWidth: 400, margin: '60px auto', padding: 24, border: '1px solid #eee', borderRadius: 10 }}>
       <h2>Forgot Password</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} disabled={loading}>
         <label htmlFor="email">Email:</label>
         <input
           id="email"

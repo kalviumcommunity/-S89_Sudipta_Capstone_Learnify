@@ -89,6 +89,13 @@ router.get('/stats', catchAsync(async (req, res) => {
     };
     
     logger.info(`Dashboard stats retrieved for user: ${userId}`);
+    logger.info(`Stats being returned:`, {
+      totalTestsAttempted: stats.totalTestsAttempted,
+      totalDSAProblemsAttempted: stats.totalDSAProblemsAttempted,
+      overallAccuracy: stats.overallAccuracy,
+      averageTestScore: stats.averageTestScore,
+      recentTestsCount: recentTests.length
+    });
     return sendSuccess(res, HTTP_STATUS.OK, SUCCESS_MESSAGES.DATA_RETRIEVED, stats);
 }));
 
@@ -297,7 +304,7 @@ router.post('/submit-test-result', async (req, res) => {
 
     // Clear dashboard stats cache
     const statsCacheKey = generateUserCacheKey(userId, 'dashboard:stats');
-    cache.del(statsCacheKey);
+    cache.delete(statsCacheKey);
     logger.info(`Cache cleared for user: ${userId}`);
 
     return sendSuccess(res, HTTP_STATUS.OK, SUCCESS_MESSAGES.TEST_SUBMITTED, {
@@ -308,7 +315,7 @@ router.post('/submit-test-result', async (req, res) => {
     });
   } catch (err) {
     logger.error('Error in submit-test-result:', err);
-    res.status(500).json({ error: 'Internal Server Error' });
+    res.status(500).json({ error: 'Internal Server Error', details: err.message });
   }
 });
 

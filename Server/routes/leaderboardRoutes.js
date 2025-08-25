@@ -2,6 +2,22 @@ const express = require('express');
 const router = express.Router();
 const TestResult = require('../models/TestResult');
 const User = require('../models/User');
+const rateLimit = require('express-rate-limit');
+
+// Rate limiting configuration
+const leaderboardLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // limit each IP to 100 requests per windowMs
+  message: {
+    error: 'Too many requests from this IP, please try again later.',
+    status: 429
+  },
+  standardHeaders: true,
+  legacyHeaders: false,
+});
+
+// Apply rate limiting to all leaderboard routes
+router.use(leaderboardLimiter);
 
 // Test route to verify routes are working
 router.get('/test', (req, res) => {

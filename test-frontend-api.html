@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA API Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .test-section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .success {
+            color: green;
+        }
+        .error {
+            color: red;
+        }
+        .loading {
+            color: blue;
+        }
+        pre {
+            background: #f8f8f8;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>DSA API Test Page</h1>
+    
+    <div class="test-section">
+        <h2>Test DSA Topics Endpoint</h2>
+        <button onclick="testTopics()">Test /api/dsa/topics</button>
+        <div id="topics-result"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test DSA Progress Endpoint (Requires Auth)</h2>
+        <button onclick="testProgress()">Test /api/dsa/progress</button>
+        <div id="progress-result"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test DSA Streak Endpoint (Requires Auth)</h2>
+        <button onclick="testStreak()">Test /api/dsa/streak</button>
+        <div id="streak-result"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test Daily Challenge Endpoint (Requires Auth)</h2>
+        <button onclick="testDailyChallenge()">Test /api/dsa/daily-challenge</button>
+        <div id="challenge-result"></div>
+    </div>
+
+    <script>
+        async function makeRequest(url, method = 'GET') {
+            try {
+                const response = await fetch(url, {
+                    method,
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    credentials: 'include'
+                });
+                
+                const data = await response.json();
+                return {
+                    status: response.status,
+                    statusText: response.statusText,
+                    data
+                };
+            } catch (error) {
+                return {
+                    status: 'Network Error',
+                    statusText: error.message,
+                    data: null
+                };
+            }
+        }
+
+        function displayResult(elementId, result) {
+            const element = document.getElementById(elementId);
+            const isSuccess = result.status >= 200 && result.status < 300;
+            const className = isSuccess ? 'success' : 'error';
+            
+            element.innerHTML = `
+                <div class="${className}">
+                    <strong>Status:</strong> ${result.status} ${result.statusText}
+                </div>
+                <pre>${JSON.stringify(result.data, null, 2)}</pre>
+            `;
+        }
+
+        async function testTopics() {
+            document.getElementById('topics-result').innerHTML = '<div class="loading">Testing...</div>';
+            const result = await makeRequest('/api/dsa/topics');
+            displayResult('topics-result', result);
+        }
+
+        async function testProgress() {
+            document.getElementById('progress-result').innerHTML = '<div class="loading">Testing...</div>';
+            const result = await makeRequest('/api/dsa/progress');
+            displayResult('progress-result', result);
+        }
+
+        async function testStreak() {
+            document.getElementById('streak-result').innerHTML = '<div class="loading">Testing...</div>';
+            const result = await makeRequest('/api/dsa/streak');
+            displayResult('streak-result', result);
+        }
+
+        async function testDailyChallenge() {
+            document.getElementById('challenge-result').innerHTML = '<div class="loading">Testing...</div>';
+            const result = await makeRequest('/api/dsa/daily-challenge');
+            displayResult('challenge-result', result);
+        }
+
+        // Auto-test topics on page load
+        window.onload = function() {
+            testTopics();
+        };
+    </script>
+</body>
+</html>

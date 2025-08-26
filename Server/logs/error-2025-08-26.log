@@ -1,0 +1,100 @@
+[2025-08-26T01:40:49.161Z] [WARN] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 401 - 5ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:40:49.183Z] [WARN] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 401 - 3ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:45:38.319Z] [WARN] POST /api/auth/register - 400 - 84ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:38.338Z] [WARN] POST /register - 400 - 8ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:38.346Z] [WARN] POST /register - 400 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:38.354Z] [WARN] POST /register - 400 - 1ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:38.360Z] [WARN] POST /register - 400 - 0ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:39.138Z] [WARN] POST /api/auth/login - 401 - 94ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:39.716Z] [WARN] POST /api/auth/login - 401 - 568ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:39.723Z] [WARN] POST /login - 400 - 1ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:40.476Z] [WARN] GET /me - 401 - 0ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:40.500Z] [WARN] GET /me - 401 - 11ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:40.504Z] [WARN] GET /me - 401 - 1ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:46.319Z] [WARN] POST /register - 400 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:46.445Z] [WARN] POST /register - 400 - 4ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:46.567Z] [WARN] POST /register - 400 - 1ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:46.693Z] [WARN] POST /register - 400 - 4ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:46.816Z] [WARN] POST /register - 400 - 3ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:46.940Z] [WARN] POST /register - 400 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:47.065Z] [WARN] POST /register - 400 - 3ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:47.861Z] [WARN] POST /login - 400 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:47.971Z] [WARN] POST /login - 400 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:48.078Z] [WARN] POST /login - 400 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:48.190Z] [WARN] POST /register - 400 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:48.311Z] [WARN] POST /register - 400 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:48.423Z] [WARN] POST /register - 400 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:48.530Z] [WARN] POST /register - 400 - 1ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.373Z] [WARN] POST /api/auth/login - 401 - 4060ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.376Z] [WARN] POST /api/auth/login - 401 - 4061ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.378Z] [WARN] POST /api/auth/login - 401 - 4054ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.395Z] [WARN] POST /api/auth/login - 401 - 4016ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.411Z] [WARN] POST /api/auth/login - 401 - 4021ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.435Z] [WARN] POST /api/auth/login - 401 - 4141ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.441Z] [WARN] POST /api/auth/login - 401 - 4136ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.447Z] [WARN] POST /api/auth/login - 401 - 4137ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.453Z] [WARN] POST /api/auth/login - 401 - 4135ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.459Z] [WARN] POST /api/auth/login - 401 - 4095ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.463Z] [WARN] POST /api/auth/login - 401 - 4090ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.469Z] [WARN] POST /api/auth/login - 401 - 4085ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.474Z] [WARN] POST /api/auth/login - 401 - 4086ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:54.580Z] [WARN] POST /api/auth/login - 401 - 5248ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:54.583Z] [WARN] POST /api/auth/login - 401 - 5228ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:55.124Z] [WARN] GET /me - 401 - 3ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:55.234Z] [WARN] GET /me - 401 - 4ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:55.346Z] [WARN] GET /me - 401 - 3ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:55.456Z] [WARN] GET /me - 401 - 4ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:55.563Z] [WARN] GET /me - 401 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:55.670Z] [WARN] GET /me - 401 - 1ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:55.782Z] [WARN] GET /me - 401 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:55.890Z] [WARN] GET /me - 401 - 1ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:56.001Z] [WARN] GET /me - 401 - 1ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:56.111Z] [WARN] GET /me - 401 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:56.352Z] [WARN] POST /api/auth/login - 401 - 128ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:56.552Z] [WARN] POST /api/auth/login - 401 - 83ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:56.756Z] [WARN] POST /api/auth/login - 401 - 85ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:48:35.340Z] [WARN] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 401 - 6ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:48:35.576Z] [WARN] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 401 - 10ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:48:40.837Z] [WARN] GET /me - 401 - 3ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:49:14.927Z] [WARN] MongoDB disconnected. Attempting to reconnect...
+[2025-08-26T01:49:14.931Z] [WARN] MongoDB disconnected. Attempting to reconnect...
+[2025-08-26T01:56:50.095Z] [WARN] GET /api/api/dsa/streak - 404 - 191ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:56:50.165Z] [WARN] GET /api/api/dsa/streak - 404 - 59ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:06.562Z] [WARN] GET /api/api/dsa/streak - 404 - 185ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:06.771Z] [WARN] GET /api/api/dsa/streak - 404 - 186ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:14.242Z] [WARN] GET /api/api/dsa/progress - 404 - 165ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:14.319Z] [WARN] GET /api/api/dsa/progress - 404 - 62ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:28.695Z] [WARN] GET /api/api/dsa/streak - 404 - 85ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:28.799Z] [WARN] GET /api/api/dsa/streak - 404 - 83ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:58.685Z] [WARN] POST /daily-challenge/participate - 400 - 312ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:21.426Z] [WARN] GET /api/api/dsa/progress - 404 - 149ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:21.439Z] [WARN] GET /api/api/dsa/topics - 404 - 151ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:21.536Z] [WARN] GET /api/api/dsa/topics - 404 - 76ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:21.541Z] [WARN] GET /api/api/dsa/progress - 404 - 94ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:21.720Z] [WARN] GET /api/api/dsa/topics - 404 - 167ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:21.843Z] [WARN] GET /api/api/dsa/topics - 404 - 112ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:27.157Z] [WARN] GET /api/api/dsa/progress - 404 - 78ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:27.365Z] [ERROR] Error fetching topic details: | {"stringValue":"\"arrays\"","valueType":"string","kind":"ObjectId","value":"arrays","path":"_id","reason":{},"name":"CastError","message":"Cast to ObjectId failed for value \"arrays\" (type string) at path \"_id\" for model \"DSATopic\""}
+[2025-08-26T01:59:27.378Z] [WARN] GET /topics/arrays - 500 - 305ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:27.383Z] [WARN] GET /api/api/dsa/progress - 404 - 207ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:27.886Z] [ERROR] Error fetching topic details: | {"stringValue":"\"arrays\"","valueType":"string","kind":"ObjectId","value":"arrays","path":"_id","reason":{},"name":"CastError","message":"Cast to ObjectId failed for value \"arrays\" (type string) at path \"_id\" for model \"DSATopic\""}
+[2025-08-26T01:59:27.900Z] [WARN] GET /topics/arrays - 500 - 506ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:29.521Z] [ERROR] Error fetching problems: | {"stringValue":"\"arrays\"","valueType":"string","kind":"ObjectId","value":"arrays","path":"topic","reason":{},"name":"CastError","message":"Cast to ObjectId failed for value \"arrays\" (type string) at path \"topic\" for model \"DSAProblem\""}
+[2025-08-26T01:59:29.533Z] [WARN] GET /problems?topic=arrays&page=1&limit=20 - 500 - 198ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:29.800Z] [ERROR] Error fetching problems: | {"stringValue":"\"arrays\"","valueType":"string","kind":"ObjectId","value":"arrays","path":"topic","reason":{},"name":"CastError","message":"Cast to ObjectId failed for value \"arrays\" (type string) at path \"topic\" for model \"DSAProblem\""}
+[2025-08-26T01:59:29.810Z] [WARN] GET /problems?topic=arrays&page=1&limit=20 - 500 - 260ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:09:43.711Z] [WARN] GET /problems - 401 - 8ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T02:09:43.727Z] [WARN] GET /progress - 401 - 8ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T02:09:43.740Z] [WARN] GET /streak - 401 - 8ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T02:09:43.750Z] [WARN] GET /daily-challenge - 401 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T02:16:26.318Z] [WARN] GET /problems/two-sum - 401 - 803ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:20:37.764Z] [WARN] MongoDB disconnected. Attempting to reconnect...
+[2025-08-26T02:20:53.642Z] [WARN] POST /daily-challenge/participate - 400 - 173ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:21:01.276Z] [WARN] POST /daily-challenge/participate - 400 - 846ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:22:56.168Z] [WARN] GET /daily-challenge - 401 - 85ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:22:58.984Z] [WARN] POST /daily-challenge/participate - 400 - 271ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:24:40.053Z] [WARN] GET /daily-challenge - 401 - 3ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T02:24:53.052Z] [WARN] POST /daily-challenge/participate - 400 - 261ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:24:59.751Z] [WARN] GET /daily-challenge - 401 - 98ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:02.056Z] [WARN] POST /daily-challenge/participate - 400 - 203ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:33.464Z] [WARN] POST /daily-challenge/participate - 400 - 199ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}

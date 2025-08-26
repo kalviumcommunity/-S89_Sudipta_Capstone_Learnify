@@ -1,0 +1,287 @@
+[2025-08-26T01:40:00.498Z] [INFO] ✅ MongoDB Connected: ac-7mlv6vi-shard-00-00.tdcydrh.mongodb.net
+[2025-08-26T01:40:00.527Z] [INFO] 🚀 Server running on http://localhost:5000
+[2025-08-26T01:40:00.530Z] [INFO] 📊 Environment: development
+[2025-08-26T01:40:38.675Z] [INFO] GET /models - 304 - 130ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:40:49.161Z] [WARN] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 401 - 5ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:40:49.183Z] [WARN] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 401 - 3ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:40:49.209Z] [INFO] GET /filters - 304 - 99ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:40:49.253Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 84ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:40:49.303Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 200 - 159ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:40:49.345Z] [INFO] GET /filters - 304 - 78ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:40:49.359Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 75ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:40:49.461Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 200 - 133ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:44:49.628Z] [INFO] GET /health - 200 - 22ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:44:50.418Z] [INFO] New user registered: test1756172689633@example.com
+[2025-08-26T01:44:50.423Z] [INFO] POST /register - 201 - 700ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:44:51.110Z] [INFO] User logged in: test1756172689633@example.com
+[2025-08-26T01:44:51.112Z] [INFO] POST /login - 200 - 681ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:44:51.210Z] [INFO] GET /me - 200 - 94ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:37.561Z] [INFO] GET /health - 200 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:38.221Z] [INFO] New user registered: test1756172737576@example.com
+[2025-08-26T01:45:38.225Z] [INFO] POST /register - 201 - 643ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:38.319Z] [WARN] POST /api/auth/register - 400 - 84ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:38.338Z] [WARN] POST /register - 400 - 8ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:38.346Z] [WARN] POST /register - 400 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:38.354Z] [WARN] POST /register - 400 - 1ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:38.360Z] [WARN] POST /register - 400 - 0ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:39.034Z] [INFO] User logged in: test1756172737576@example.com
+[2025-08-26T01:45:39.037Z] [INFO] POST /login - 200 - 667ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:39.138Z] [WARN] POST /api/auth/login - 401 - 94ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:39.716Z] [WARN] POST /api/auth/login - 401 - 568ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:39.723Z] [WARN] POST /login - 400 - 1ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:40.364Z] [INFO] User logged in: test1756172737576@example.com
+[2025-08-26T01:45:40.368Z] [INFO] POST /login - 200 - 640ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:40.469Z] [INFO] GET /me - 200 - 95ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:40.476Z] [WARN] GET /me - 401 - 0ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:40.500Z] [WARN] GET /me - 401 - 11ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:45:40.504Z] [WARN] GET /me - 401 - 1ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:46.319Z] [WARN] POST /register - 400 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:46.445Z] [WARN] POST /register - 400 - 4ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:46.567Z] [WARN] POST /register - 400 - 1ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:46.693Z] [WARN] POST /register - 400 - 4ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:46.816Z] [WARN] POST /register - 400 - 3ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:46.940Z] [WARN] POST /register - 400 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:47.065Z] [WARN] POST /register - 400 - 3ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:47.848Z] [INFO] New user registered: hashtest1756172807185@example.com
+[2025-08-26T01:46:47.851Z] [INFO] POST /register - 201 - 661ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:47.861Z] [WARN] POST /login - 400 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:47.971Z] [WARN] POST /login - 400 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:48.078Z] [WARN] POST /login - 400 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:48.190Z] [WARN] POST /register - 400 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:48.311Z] [WARN] POST /register - 400 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:48.423Z] [WARN] POST /register - 400 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:48.530Z] [WARN] POST /register - 400 - 1ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:49.281Z] [INFO] New user registered: ratelimit@example.com
+[2025-08-26T01:46:49.284Z] [INFO] POST /register - 201 - 640ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.373Z] [WARN] POST /api/auth/login - 401 - 4060ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.376Z] [WARN] POST /api/auth/login - 401 - 4061ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.378Z] [WARN] POST /api/auth/login - 401 - 4054ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.395Z] [WARN] POST /api/auth/login - 401 - 4016ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.411Z] [WARN] POST /api/auth/login - 401 - 4021ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.435Z] [WARN] POST /api/auth/login - 401 - 4141ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.441Z] [WARN] POST /api/auth/login - 401 - 4136ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.447Z] [WARN] POST /api/auth/login - 401 - 4137ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.453Z] [WARN] POST /api/auth/login - 401 - 4135ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.459Z] [WARN] POST /api/auth/login - 401 - 4095ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.463Z] [WARN] POST /api/auth/login - 401 - 4090ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.469Z] [WARN] POST /api/auth/login - 401 - 4085ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:53.474Z] [WARN] POST /api/auth/login - 401 - 4086ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:54.580Z] [WARN] POST /api/auth/login - 401 - 5248ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:54.583Z] [WARN] POST /api/auth/login - 401 - 5228ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:55.116Z] [INFO] User logged in: hashtest1756172807185@example.com
+[2025-08-26T01:46:55.118Z] [INFO] POST /login - 200 - 529ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:55.124Z] [WARN] GET /me - 401 - 3ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:55.234Z] [WARN] GET /me - 401 - 4ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:55.346Z] [WARN] GET /me - 401 - 3ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:55.456Z] [WARN] GET /me - 401 - 4ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:55.563Z] [WARN] GET /me - 401 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:55.670Z] [WARN] GET /me - 401 - 1ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:55.782Z] [WARN] GET /me - 401 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:55.890Z] [WARN] GET /me - 401 - 1ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:56.001Z] [WARN] GET /me - 401 - 1ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:56.111Z] [WARN] GET /me - 401 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:56.352Z] [WARN] POST /api/auth/login - 401 - 128ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:56.552Z] [WARN] POST /api/auth/login - 401 - 83ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:46:56.756Z] [WARN] POST /api/auth/login - 401 - 85ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:48:31.082Z] [INFO] New user registered: dom@gmail.com
+[2025-08-26T01:48:31.097Z] [INFO] POST /register - 201 - 1013ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:48:31.297Z] [INFO] GET /models - 200 - 107ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:48:31.789Z] [INFO] GET /calendar? - 200 - 503ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:48:31.797Z] [INFO] Dashboard stats retrieved for user: 68ad126ebd451cab5ad9c31e
+[2025-08-26T01:48:31.800Z] [INFO] Stats being returned: | {"totalTestsAttempted":0,"totalDSAProblemsAttempted":0,"overallAccuracy":0,"averageTestScore":0,"recentTestsCount":0}
+[2025-08-26T01:48:31.810Z] [INFO] GET /stats - 200 - 550ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:48:31.820Z] [INFO] Test history retrieved for user: 68ad126ebd451cab5ad9c31e, page: 1
+[2025-08-26T01:48:31.826Z] [INFO] GET /test-history?limit=10 - 200 - 525ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:48:35.340Z] [WARN] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 401 - 6ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:48:35.533Z] [INFO] GET /filters - 200 - 239ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:48:35.576Z] [WARN] GET /user-position?exam=all&subject=all&chapter=all&timeframe=all - 401 - 10ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:48:35.650Z] [INFO] GET /top-performers?exam=all&timeframe=all - 200 - 258ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:48:35.715Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 200 - 357ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:48:35.791Z] [INFO] GET /filters - 304 - 119ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:48:35.806Z] [INFO] GET /top-performers?exam=all&timeframe=all - 304 - 106ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:48:35.912Z] [INFO] GET /?exam=all&subject=all&chapter=all&timeframe=all&sortBy=score&sortOrder=desc&page=1&limit=20 - 304 - 179ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:48:37.816Z] [INFO] New user registered: sessiontest1756172916678@example.com
+[2025-08-26T01:48:37.823Z] [INFO] POST /register - 201 - 1024ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:48:37.975Z] [INFO] GET /me - 200 - 126ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:48:38.081Z] [INFO] GET /me - 200 - 88ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:48:38.108Z] [INFO] GET /me - 200 - 76ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:48:38.118Z] [INFO] GET /me - 200 - 69ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:48:38.140Z] [INFO] GET /me - 200 - 80ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:48:38.182Z] [INFO] GET /me - 200 - 115ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:48:38.341Z] [INFO] GET /me - 200 - 136ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:48:39.424Z] [INFO] GET /me - 200 - 71ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:48:40.521Z] [INFO] User logged in: sessiontest1756172916678@example.com
+[2025-08-26T01:48:40.540Z] [INFO] POST /login - 200 - 1101ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:48:40.708Z] [INFO] GET /me - 200 - 147ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:48:40.824Z] [INFO] GET /me - 200 - 99ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:48:40.837Z] [WARN] GET /me - 401 - 3ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:48:41.950Z] [INFO] User logged in: sessiontest1756172916678@example.com
+[2025-08-26T01:48:41.957Z] [INFO] POST /login - 200 - 1108ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:48:42.048Z] [INFO] GET /me - 200 - 81ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T01:49:14.927Z] [WARN] MongoDB disconnected. Attempting to reconnect...
+[2025-08-26T01:49:14.931Z] [WARN] MongoDB disconnected. Attempting to reconnect...
+[2025-08-26T01:49:19.856Z] [INFO] New user registered: test@example.com
+[2025-08-26T01:49:22.863Z] [INFO] User logged in: test@example.com
+[2025-08-26T01:54:40.026Z] [INFO] ✅ MongoDB Connected: ac-7mlv6vi-shard-00-00.tdcydrh.mongodb.net
+[2025-08-26T01:54:40.041Z] [INFO] 🚀 Server running on http://localhost:5000
+[2025-08-26T01:54:40.043Z] [INFO] 📊 Environment: development
+[2025-08-26T01:55:03.370Z] [INFO] ✅ MongoDB Connected: ac-7mlv6vi-shard-00-00.tdcydrh.mongodb.net
+[2025-08-26T01:55:03.374Z] [INFO] 🚀 Server running on http://localhost:5000
+[2025-08-26T01:55:03.375Z] [INFO] 📊 Environment: development
+[2025-08-26T01:55:56.417Z] [INFO] Google OAuth initiated
+[2025-08-26T01:55:56.507Z] [INFO] GET /google - 302 - 131ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:56:03.680Z] [INFO] Google OAuth callback received
+[2025-08-26T01:56:04.717Z] [INFO] Google OAuth strategy processing user: sudiptab556677@gmail.com
+[2025-08-26T01:56:04.963Z] [INFO] Google OAuth successful for user: sudiptab556677@gmail.com
+[2025-08-26T01:56:05.018Z] [INFO] GET /google/callback?code=4%2F0AVMBsJiCnjbvHvFCWmldzhQ2bA2CrEFXsT8coEdatPUVJuanjgo7gfE2TPczA969NAAntQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none - 302 - 1351ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:56:07.802Z] [INFO] GET /me - 200 - 269ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:56:07.939Z] [INFO] GET /me - 304 - 116ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:56:08.111Z] [INFO] GET /models - 304 - 150ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:56:08.499Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-08-26T01:56:08.513Z] [INFO] GET /test-history?limit=10 - 304 - 523ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:56:08.755Z] [INFO] Dashboard stats retrieved for user: 685bb80bf9dbe50abb35223f
+[2025-08-26T01:56:08.758Z] [INFO] Stats being returned: | {"totalTestsAttempted":17,"totalDSAProblemsAttempted":1,"overallAccuracy":13.146666666666667,"averageTestScore":3,"recentTestsCount":10}
+[2025-08-26T01:56:08.763Z] [INFO] GET /calendar? - 304 - 789ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:56:08.767Z] [INFO] GET /stats - 304 - 797ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:56:08.915Z] [INFO] GET /models - 304 - 405ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:56:43.207Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-08-26T01:56:43.212Z] [INFO] GET /test-history?limit=10 - 304 - 578ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:56:43.529Z] [INFO] GET /calendar? - 304 - 876ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:56:43.597Z] [INFO] Dashboard stats retrieved for user: 685bb80bf9dbe50abb35223f
+[2025-08-26T01:56:43.599Z] [INFO] Stats being returned: | {"totalTestsAttempted":17,"totalDSAProblemsAttempted":1,"overallAccuracy":13.146666666666667,"averageTestScore":3,"recentTestsCount":10}
+[2025-08-26T01:56:43.605Z] [INFO] GET /stats - 304 - 986ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:56:50.095Z] [WARN] GET /api/api/dsa/streak - 404 - 191ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:56:50.165Z] [WARN] GET /api/api/dsa/streak - 404 - 59ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:56:50.696Z] [INFO] GET /daily-challenge - 200 - 782ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:56:51.177Z] [INFO] GET /daily-challenge - 304 - 463ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:56:58.788Z] [INFO] GET /topics - 304 - 197ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:56:58.941Z] [INFO] GET /topics - 304 - 134ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:56:59.152Z] [INFO] GET /problems?page=1&limit=20 - 200 - 555ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:56:59.800Z] [INFO] GET /problems?page=1&limit=20 - 304 - 639ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:06.562Z] [WARN] GET /api/api/dsa/streak - 404 - 185ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:06.771Z] [WARN] GET /api/api/dsa/streak - 404 - 186ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:06.917Z] [INFO] GET /daily-challenge - 304 - 515ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:07.379Z] [INFO] GET /daily-challenge - 304 - 444ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:14.242Z] [WARN] GET /api/api/dsa/progress - 404 - 165ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:14.319Z] [WARN] GET /api/api/dsa/progress - 404 - 62ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:28.695Z] [WARN] GET /api/api/dsa/streak - 404 - 85ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:28.799Z] [WARN] GET /api/api/dsa/streak - 404 - 83ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:29.092Z] [INFO] GET /daily-challenge - 304 - 460ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:29.605Z] [INFO] GET /daily-challenge - 304 - 491ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:31.034Z] [INFO] GET /conversations - 304 - 673ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:39.647Z] [INFO] POST /send - 200 - 5243ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:40.379Z] [INFO] GET /conversations - 200 - 664ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:54.076Z] [INFO] POST /daily-challenge/participate - 200 - 462ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:54.491Z] [INFO] GET /daily-challenge - 200 - 395ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:57:58.685Z] [WARN] POST /daily-challenge/participate - 400 - 312ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:21.426Z] [WARN] GET /api/api/dsa/progress - 404 - 149ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:21.439Z] [WARN] GET /api/api/dsa/topics - 404 - 151ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:21.536Z] [WARN] GET /api/api/dsa/topics - 404 - 76ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:21.541Z] [WARN] GET /api/api/dsa/progress - 404 - 94ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:21.720Z] [WARN] GET /api/api/dsa/topics - 404 - 167ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:21.843Z] [WARN] GET /api/api/dsa/topics - 404 - 112ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:27.157Z] [WARN] GET /api/api/dsa/progress - 404 - 78ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:27.365Z] [ERROR] Error fetching topic details: | {"stringValue":"\"arrays\"","valueType":"string","kind":"ObjectId","value":"arrays","path":"_id","reason":{},"name":"CastError","message":"Cast to ObjectId failed for value \"arrays\" (type string) at path \"_id\" for model \"DSATopic\""}
+[2025-08-26T01:59:27.378Z] [WARN] GET /topics/arrays - 500 - 305ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:27.383Z] [WARN] GET /api/api/dsa/progress - 404 - 207ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:27.886Z] [ERROR] Error fetching topic details: | {"stringValue":"\"arrays\"","valueType":"string","kind":"ObjectId","value":"arrays","path":"_id","reason":{},"name":"CastError","message":"Cast to ObjectId failed for value \"arrays\" (type string) at path \"_id\" for model \"DSATopic\""}
+[2025-08-26T01:59:27.900Z] [WARN] GET /topics/arrays - 500 - 506ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:29.521Z] [ERROR] Error fetching problems: | {"stringValue":"\"arrays\"","valueType":"string","kind":"ObjectId","value":"arrays","path":"topic","reason":{},"name":"CastError","message":"Cast to ObjectId failed for value \"arrays\" (type string) at path \"topic\" for model \"DSAProblem\""}
+[2025-08-26T01:59:29.527Z] [INFO] GET /topics - 304 - 202ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:29.533Z] [WARN] GET /problems?topic=arrays&page=1&limit=20 - 500 - 198ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:29.786Z] [INFO] GET /topics - 304 - 228ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:29.800Z] [ERROR] Error fetching problems: | {"stringValue":"\"arrays\"","valueType":"string","kind":"ObjectId","value":"arrays","path":"topic","reason":{},"name":"CastError","message":"Cast to ObjectId failed for value \"arrays\" (type string) at path \"topic\" for model \"DSAProblem\""}
+[2025-08-26T01:59:29.810Z] [WARN] GET /problems?topic=arrays&page=1&limit=20 - 500 - 260ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:32.661Z] [INFO] GET /problems/two-sum - 200 - 486ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:33.050Z] [INFO] GET /problems/two-sum - 304 - 370ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T01:59:36.632Z] [INFO] User stats updated for DSA submission: 685bb80bf9dbe50abb35223f
+[2025-08-26T01:59:36.635Z] [INFO] Dashboard cache cleared for user: 685bb80bf9dbe50abb35223f
+[2025-08-26T01:59:36.641Z] [INFO] POST /problems/two-sum/submit - 200 - 1415ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:08:09.608Z] [INFO] ✅ MongoDB Connected: ac-7mlv6vi-shard-00-00.tdcydrh.mongodb.net
+[2025-08-26T02:08:09.613Z] [INFO] 🚀 Server running on http://localhost:5000
+[2025-08-26T02:08:09.614Z] [INFO] 📊 Environment: development
+[2025-08-26T02:09:43.681Z] [INFO] GET /topics - 200 - 122ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T02:09:43.711Z] [WARN] GET /problems - 401 - 8ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T02:09:43.727Z] [WARN] GET /progress - 401 - 8ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T02:09:43.740Z] [WARN] GET /streak - 401 - 8ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T02:09:43.750Z] [WARN] GET /daily-challenge - 401 - 2ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T02:16:26.318Z] [WARN] GET /problems/two-sum - 401 - 803ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:16:26.727Z] [INFO] GET /models - 304 - 141ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:16:26.844Z] [INFO] GET /problems/two-sum - 200 - 466ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:20:27.482Z] [INFO] Google OAuth initiated
+[2025-08-26T02:20:27.514Z] [INFO] GET /google - 302 - 129ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:20:31.756Z] [INFO] Google OAuth callback received
+[2025-08-26T02:20:32.424Z] [INFO] Google OAuth strategy processing user: sudiptab556677@gmail.com
+[2025-08-26T02:20:32.548Z] [INFO] Google OAuth successful for user: sudiptab556677@gmail.com
+[2025-08-26T02:20:32.591Z] [INFO] GET /google/callback?code=4%2F0AVMBsJhGzXe5cmbK8k0Zg4UqlJm2Af-JVWZaosG0TK4I_z-wiEFgTYp2-voSD_lzy8YodA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none - 302 - 905ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:20:34.749Z] [INFO] GET /me - 200 - 83ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:20:34.822Z] [INFO] GET /me - 304 - 62ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:20:35.175Z] [INFO] GET /models - 304 - 172ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:20:35.303Z] [INFO] Test history retrieved for user: 685bb80bf9dbe50abb35223f, page: 1
+[2025-08-26T02:20:35.310Z] [INFO] GET /test-history?limit=10 - 200 - 311ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:20:35.323Z] [INFO] GET /models - 304 - 135ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:20:35.686Z] [INFO] GET /calendar? - 200 - 685ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:20:35.699Z] [INFO] Dashboard stats retrieved for user: 685bb80bf9dbe50abb35223f
+[2025-08-26T02:20:35.701Z] [INFO] Stats being returned: | {"totalTestsAttempted":17,"totalDSAProblemsAttempted":2,"overallAccuracy":12.454736842105262,"averageTestScore":3,"recentTestsCount":10}
+[2025-08-26T02:20:35.706Z] [INFO] GET /stats - 200 - 715ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:20:37.764Z] [WARN] MongoDB disconnected. Attempting to reconnect...
+[2025-08-26T02:20:46.914Z] [INFO] MongoDB reconnected
+[2025-08-26T02:20:47.436Z] [INFO] GET /streak - 200 - 1050ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:20:47.469Z] [INFO] GET /daily-challenge - 200 - 1067ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:20:47.621Z] [INFO] GET /streak - 304 - 163ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:20:47.725Z] [INFO] GET /daily-challenge - 304 - 236ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:20:53.642Z] [WARN] POST /daily-challenge/participate - 400 - 173ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:21:01.276Z] [WARN] POST /daily-challenge/participate - 400 - 846ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:21:12.863Z] [INFO] GET /topics - 304 - 232ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:21:13.089Z] [INFO] GET /topics - 304 - 209ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:21:13.251Z] [INFO] GET /problems?page=1&limit=20 - 200 - 613ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:21:13.742Z] [INFO] GET /problems?page=1&limit=20 - 304 - 479ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:21:16.218Z] [INFO] GET /problems/reverse-linked-list - 200 - 558ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:21:16.860Z] [INFO] GET /problems/reverse-linked-list - 304 - 632ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:21:19.720Z] [INFO] GET /topics - 304 - 108ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:21:19.876Z] [INFO] GET /topics - 304 - 136ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:21:19.968Z] [INFO] GET /problems?page=1&limit=20 - 304 - 354ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:21:20.328Z] [INFO] GET /problems?page=1&limit=20 - 304 - 353ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:22:56.168Z] [WARN] GET /daily-challenge - 401 - 85ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:22:56.416Z] [INFO] GET /daily-challenge - 304 - 236ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:22:56.419Z] [INFO] GET /streak - 304 - 188ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:22:57.233Z] [INFO] GET /models - 304 - 997ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:22:58.984Z] [WARN] POST /daily-challenge/participate - 400 - 271ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:24:04.884Z] [INFO] GET /streak - 304 - 208ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:24:40.053Z] [WARN] GET /daily-challenge - 401 - 3ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T02:24:40.547Z] [INFO] User logged in: test@example.com
+[2025-08-26T02:24:40.550Z] [INFO] POST /login - 200 - 471ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T02:24:40.715Z] [INFO] GET /daily-challenge - 200 - 162ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T02:24:40.899Z] [INFO] POST /daily-challenge/participate - 200 - 181ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T02:24:41.063Z] [INFO] GET /daily-challenge - 200 - 163ms | {"ip":"::1","userAgent":"axios/1.11.0"}
+[2025-08-26T02:24:53.052Z] [WARN] POST /daily-challenge/participate - 400 - 261ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:24:59.751Z] [WARN] GET /daily-challenge - 401 - 98ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:24:59.935Z] [INFO] GET /models - 304 - 197ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:00.012Z] [INFO] GET /streak - 304 - 283ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:00.064Z] [INFO] GET /daily-challenge - 200 - 303ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:02.056Z] [WARN] POST /daily-challenge/participate - 400 - 203ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:15.534Z] [INFO] Google OAuth initiated
+[2025-08-26T02:25:15.544Z] [INFO] GET /google - 302 - 70ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:19.099Z] [INFO] Google OAuth callback received
+[2025-08-26T02:25:19.697Z] [INFO] Google OAuth strategy processing user: learnifys31@gmail.com
+[2025-08-26T02:25:19.769Z] [INFO] Google OAuth successful for user: learnifys31@gmail.com
+[2025-08-26T02:25:19.779Z] [INFO] GET /google/callback?code=4%2F0AVMBsJiXsMrMtlD-DWedMul1wu8MbVAebKHKOcGVkgXYIL0oB8WGZcG1pWQZVkFBGwLIlg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=1&prompt=none - 302 - 735ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:20.940Z] [INFO] GET /me - 200 - 68ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:21.017Z] [INFO] GET /me - 304 - 58ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:21.296Z] [INFO] Test history retrieved for user: 688eca4982add4cd22b1da6a, page: 1
+[2025-08-26T02:25:21.298Z] [INFO] GET /test-history?limit=10 - 200 - 252ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:21.354Z] [INFO] GET /calendar? - 200 - 303ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:21.368Z] [INFO] Dashboard stats retrieved for user: 688eca4982add4cd22b1da6a
+[2025-08-26T02:25:21.369Z] [INFO] Stats being returned: | {"totalTestsAttempted":1,"totalDSAProblemsAttempted":0,"overallAccuracy":3.33,"averageTestScore":1,"recentTestsCount":1}
+[2025-08-26T02:25:21.371Z] [INFO] GET /stats - 200 - 334ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:21.921Z] [INFO] GET /models - 304 - 867ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:22.044Z] [INFO] GET /models - 304 - 114ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:27.836Z] [INFO] GET /streak - 200 - 331ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:27.889Z] [INFO] GET /daily-challenge - 304 - 377ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:28.169Z] [INFO] GET /streak - 304 - 326ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:28.277Z] [INFO] GET /daily-challenge - 304 - 372ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:29.296Z] [INFO] POST /daily-challenge/participate - 200 - 336ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:29.601Z] [INFO] GET /daily-challenge - 200 - 293ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:33.464Z] [WARN] POST /daily-challenge/participate - 400 - 199ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:40.044Z] [INFO] GET /progress - 200 - 736ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}
+[2025-08-26T02:25:40.761Z] [INFO] GET /progress - 304 - 701ms | {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"}

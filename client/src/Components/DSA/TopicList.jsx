@@ -22,7 +22,7 @@ const TopicList = () => {
     try {
       setLoading(true);
       const params = selectedCategory !== 'all' ? { category: selectedCategory } : {};
-      const response = await axios.get('/api/dsa/topics', { params });
+      const response = await axios.get('/dsa/topics', { params });
       let fetchedTopics = response.data.data.topics;
 
       // Merge with progress data if available

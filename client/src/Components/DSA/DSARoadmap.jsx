@@ -256,7 +256,7 @@ const DSARoadmap = () => {
 
         <div className="roadmap-timeline">
           {currentPath.topics.map((topic, index) => (
-            <div key={topic.id} className="timeline-item">
+            <div key={`${selectedPath}-${topic.id}`} className="timeline-item">
               <div className="timeline-connector">
                 {index < currentPath.topics.length - 1 && <div className="connector-line"></div>}
               </div>

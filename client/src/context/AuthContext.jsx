@@ -303,7 +303,7 @@ const login = async (email, password) => {
 
   // Helper function to get full backend URL
   const getFullBackendUrl = () => {
-    const backendUrl = import.meta.env.VITE_BACKEND_URL;
+    const backendUrl = "https://s89-sudipta-capstone-learnify-4.onrender.com";
     return backendUrl || 'http://localhost:5000';
   };
 

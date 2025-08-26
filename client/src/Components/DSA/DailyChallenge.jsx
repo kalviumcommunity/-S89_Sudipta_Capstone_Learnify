@@ -84,7 +84,18 @@ const DailyChallenge = () => {
       await fetchDailyChallenge();
     } catch (err) {
       console.error('Error participating in challenge:', err);
-      alert('Failed to join challenge. Please try again.');
+
+      // Show more specific error messages
+      let errorMessage = 'Failed to join challenge. Please try again.';
+      if (err.response?.status === 400) {
+        errorMessage = err.response?.data?.message || 'You may already be participating in today\'s challenge.';
+      } else if (err.response?.status === 401) {
+        errorMessage = 'Please sign in to participate in the daily challenge.';
+      } else if (err.response?.status === 404) {
+        errorMessage = 'No daily challenge is available today.';
+      }
+
+      alert(errorMessage);
     } finally {
       setParticipating(false);
     }

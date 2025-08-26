@@ -22,7 +22,7 @@ const config = {
   // Rate Limiting Configuration
   RATE_LIMIT_WINDOW_MS: 15 * 60 * 1000, // 15 minutes
   RATE_LIMIT_MAX_REQUESTS: 100,
-  AUTH_RATE_LIMIT_MAX_REQUESTS: process.env.NODE_ENV === 'development' ? 100 : 10, // More lenient in development
+  AUTH_RATE_LIMIT_MAX_REQUESTS: process.env.AUTH_RATE_LIMIT || (process.env.NODE_ENV === 'development' ? 100 : 10), // More lenient in development
   
   // Security Configuration
   BCRYPT_SALT_ROUNDS: 12,

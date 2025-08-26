@@ -1,7 +1,9 @@
 import { useState, useEffect, useCallback } from 'react';
+import { useAuth } from '../context/AuthContext';
 import progressService from '../services/progressService';
 
 export const useProgress = (topicId = null) => {
+  const { isAuthenticated } = useAuth();
   const [progress, setProgress] = useState(null);
   const [allProgress, setAllProgress] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -9,13 +11,13 @@ export const useProgress = (topicId = null) => {
 
   // Update progress for a specific topic
   const updateProgress = useCallback(async (problemId, isCorrect, timeTaken = 0) => {
-    if (!topicId) return;
-    
+    if (!topicId || !isAuthenticated) return;
+
     try {
       const updatedProgress = await progressService.updateProblemProgress(
-        problemId, 
-        topicId, 
-        isCorrect, 
+        problemId,
+        topicId,
+        isCorrect,
         timeTaken
       );
       setProgress(updatedProgress);
@@ -24,15 +26,21 @@ export const useProgress = (topicId = null) => {
       setError(err.message);
       return null;
     }
-  }, [topicId]);
+  }, [topicId, isAuthenticated]);
 
   // Fetch all progress data
   const fetchAllProgress = useCallback(async () => {
+    if (!isAuthenticated) {
+      setAllProgress(null);
+      setProgress(null);
+      setLoading(false);
+      return;
+    }
     try {
       setLoading(true);
       const progressData = await progressService.fetchAllProgress();
       setAllProgress(progressData);
-      
+
       // If we have a specific topicId, extract its progress
       if (topicId && progressData.topicProgress) {
         const topicProgress = progressData.topicProgress.find(
@@ -53,7 +61,7 @@ export const useProgress = (topicId = null) => {
     } finally {
       setLoading(false);
     }
-  }, [topicId]);
+  }, [topicId, isAuthenticated]);
 
   // Get cached progress for a topic
   const getCachedProgress = useCallback((targetTopicId) => {
@@ -143,10 +151,14 @@ export const useOverallProgress = () => {
 
 // Hook for daily streak management
 export const useStreak = () => {
+  const { isAuthenticated } = useAuth();
   const [streak, setStreak] = useState(0);
   const [loading, setLoading] = useState(true);
 
   const updateStreak = useCallback(async () => {
+    if (!isAuthenticated) {
+      return null;
+    }
     try {
       const result = await progressService.updateDailyStreak();
       setStreak(result.streak || 0);
@@ -155,9 +167,14 @@ export const useStreak = () => {
       console.error('Error updating streak:', error);
       return null;
     }
-  }, []);
+  }, [isAuthenticated]);
 
   const fetchStreak = useCallback(async () => {
+    if (!isAuthenticated) {
+      setStreak(0);
+      setLoading(false);
+      return;
+    }
     try {
       setLoading(true);
       const currentStreak = await progressService.getCurrentStreak();
@@ -168,7 +185,7 @@ export const useStreak = () => {
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [isAuthenticated]);
 
   useEffect(() => {
     fetchStreak();

@@ -23,8 +23,9 @@ export const AuthProvider = ({ children }) => {
   const pendingRequestsRef = useRef(new Map());
 
   // Configure axios defaults
-  // Using relative URLs since we have proxy configured in vite.config.js
-  axios.defaults.baseURL = '/api';
+  // Use environment-based URL for production, fallback to proxy for development
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  axios.defaults.baseURL = backendUrl ? `${backendUrl}/api` : '/api';
   axios.defaults.withCredentials = true;
 
   // Set up axios interceptor to include JWT token in requests
@@ -302,8 +303,9 @@ const login = async (email, password) => {
   // Google OAuth login
   const loginWithGoogle = () => {
     console.log('Initiating Google OAuth...');
-    // Use relative URL to work with proxy configuration
-    window.location.href = `/api/auth/google`;
+    // Use environment-based URL for production deployment
+    const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+    window.location.href = `${backendUrl}/api/auth/google`;
   };
 
   // Helper function for cached requests with deduplication

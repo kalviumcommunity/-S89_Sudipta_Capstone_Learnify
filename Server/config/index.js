@@ -18,6 +18,9 @@ const config = {
   
   // Client Configuration
   CLIENT_URL: process.env.CLIENT_URL || 'http://localhost:5176',
+
+  // Backend Configuration
+  BACKEND_URL: process.env.BACKEND_URL || `http://localhost:${process.env.PORT || 5000}`,
   
   // Rate Limiting Configuration
   RATE_LIMIT_WINDOW_MS: 15 * 60 * 1000, // 15 minutes

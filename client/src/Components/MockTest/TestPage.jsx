@@ -50,7 +50,7 @@ export default function TestPage() {
     async function fetchQuestions() {
       console.log('Fetching questions for:', { examId, chapterId, originalChapterName });
       try {
-        const endpoint = `/questions?exam=${examId}&chapter=${encodeURIComponent(originalChapterName)}&limit=30`;
+        const endpoint = `/questions?exam=${examId.toLowerCase()}&chapter=${encodeURIComponent(originalChapterName)}&limit=30`;
         console.log('Fetching from endpoint:', endpoint);
         const res = await api.get(endpoint);
         console.log('Response status:', res.status);

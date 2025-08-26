@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
-import axios from "axios";
+import api from "../services/api.js";
 import "../Styles/Leaderboard.css";
 
 export default function Leaderboard() {
@@ -76,7 +76,7 @@ export default function Leaderboard() {
   // API calls
   const fetchFilterOptions = async () => {
     try {
-      const response = await axios.get('/leaderboard/filters');
+      const response = await api.get('/leaderboard/filters');
       if (response.data.success) {
         setFilterOptions(response.data.filters);
       }

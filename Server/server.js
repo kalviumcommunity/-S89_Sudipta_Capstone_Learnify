@@ -72,7 +72,7 @@ app.use(cors({
     }
     
     // Allow Netlify domains
-    if (origin.includes('.netlify.app')) {
+    if (origin.includes('.netlify.app') || origin === 'https://learnify3.netlify.app') {
       return callback(null, true);
     }
     

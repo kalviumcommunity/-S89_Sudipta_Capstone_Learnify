@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
-import { fetchWithConfig } from '../../utils/api';
+import api from '../../services/api.js';
 import examChapters from '../../data/examChapters';
 import './TestPage.css';
 
@@ -52,9 +52,9 @@ export default function TestPage() {
       try {
         const endpoint = `/questions?exam=${examId}&chapter=${encodeURIComponent(originalChapterName)}&limit=30`;
         console.log('Fetching from endpoint:', endpoint);
-        const res = await fetchWithConfig(endpoint);
+        const res = await api.get(endpoint);
         console.log('Response status:', res.status);
-        const data = await res.json();
+        const data = res.data;
         console.log('Response data:', data);
 
         // Handle case where no questions are found

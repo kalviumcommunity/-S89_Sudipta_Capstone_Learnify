@@ -97,6 +97,10 @@ router.get('/google/callback',
 
 router.get('/me', async (req, res) => {
   try {
+    // Set CORS headers explicitly
+    res.header('Access-Control-Allow-Origin', req.headers.origin || '*');
+    res.header('Access-Control-Allow-Credentials', 'true');
+    
     if (req.user) {
       return res.json({ user: req.user });
     }

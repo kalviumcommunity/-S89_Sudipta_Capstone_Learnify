@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, useRef } from 'react';
 import axios from 'axios';
+import api from '../services/api.js';
 
 const AuthContext = createContext();
 
@@ -119,7 +120,7 @@ export const AuthProvider = ({ children }) => {
 
           try {
             // Get user info using the token
-            const response = await axios.get('/auth/me');
+            const response = await api.get('/auth/me');
             if (response.data.user) {
               const userData = response.data.user;
               console.log('OAuth login successful for user:', userData.email);
@@ -155,7 +156,7 @@ export const AuthProvider = ({ children }) => {
         if (window.location.pathname === '/dashboard') {
           // Try to get user info from the server session
           try {
-            const response = await axios.get('/auth/me');
+            const response = await api.get('/auth/me');
             if (response.data.user) {
               const userData = response.data.user;
               setUser(userData);
@@ -181,7 +182,7 @@ export const AuthProvider = ({ children }) => {
 const login = async (email, password) => {
     setLoading(true); // Add loading state
     try {
-      const response = await axios.post('/auth/login', {
+      const response = await api.post('/auth/login', {
         email,
         password
       });
@@ -232,7 +233,7 @@ const login = async (email, password) => {
   const register = async (name, email, password) => {
     setLoading(true); // Add loading state
     try {
-      const response = await axios.post('/auth/register', {
+      const response = await api.post('/auth/register', {
         name,
         email,
         password
@@ -300,11 +301,17 @@ const login = async (email, password) => {
     localStorage.setItem('learnify_user', JSON.stringify(userData));
   };
 
+  // Helper function to get full backend URL
+  const getFullBackendUrl = () => {
+    const backendUrl = import.meta.env.VITE_BACKEND_URL;
+    return backendUrl || 'http://localhost:5000';
+  };
+
   // Google OAuth login
   const loginWithGoogle = () => {
     console.log('Initiating Google OAuth...');
     // Use environment-based URL for production deployment
-    const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+    const backendUrl = getFullBackendUrl();
     window.location.href = `${backendUrl}/api/auth/google`;
   };
 
@@ -328,7 +335,7 @@ const login = async (email, password) => {
     }
 
     // Make the request and cache the promise
-    const requestPromise = axios.get(url, options).then(response => {
+    const requestPromise = api.get(url, options).then(response => {
       // Cache the successful response
       requestCacheRef.current.set(cacheKey, {
         data: response.data,
@@ -397,7 +404,7 @@ const login = async (email, password) => {
 
       try {
         console.log('Submitting test result:', testResultData);
-        const response = await axios.post('/dashboard/submit-test-result', testResultData);
+        const response = await api.post('/dashboard/submit-test-result', testResultData);
 
         // Clear cache since data has changed
         requestCacheRef.current.clear();
@@ -418,7 +425,7 @@ const login = async (email, password) => {
       if (!user?._id) throw new Error('User not authenticated');
 
       try {
-        const response = await axios.post('/dashboard/record-activity', {
+        const response = await api.post('/dashboard/record-activity', {
           activityType,
           details,
           date

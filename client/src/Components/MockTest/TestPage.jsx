@@ -1,6 +1,7 @@
 import { useEffect, useState, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
+import { fetchWithConfig } from '../../utils/api';
 import examChapters from '../../data/examChapters';
 import './TestPage.css';
 
@@ -49,9 +50,9 @@ export default function TestPage() {
     async function fetchQuestions() {
       console.log('Fetching questions for:', { examId, chapterId, originalChapterName });
       try {
-        const url = `http://localhost:5000/api/questions?exam=${examId}&chapter=${encodeURIComponent(originalChapterName)}&limit=30`;
-        console.log('Fetching from URL:', url);
-        const res = await fetch(url);
+        const endpoint = `/questions?exam=${examId}&chapter=${encodeURIComponent(originalChapterName)}&limit=30`;
+        console.log('Fetching from endpoint:', endpoint);
+        const res = await fetchWithConfig(endpoint);
         console.log('Response status:', res.status);
         const data = await res.json();
         console.log('Response data:', data);

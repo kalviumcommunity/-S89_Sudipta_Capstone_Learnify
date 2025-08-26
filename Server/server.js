@@ -63,9 +63,40 @@ const oauthLimiter = rateLimit({
 
 app.use(cors({
   origin: (origin, callback) => {
-    callback(null, true);
+    // Allow requests with no origin (like mobile apps, Postman, etc.)
+    if (!origin) return callback(null, true);
+    
+    // Allow local development
+    if (origin.includes('localhost') || origin.includes('127.0.0.1')) {
+      return callback(null, true);
+    }
+    
+    // Allow Netlify domains
+    if (origin.includes('.netlify.app')) {
+      return callback(null, true);
+    }
+    
+    // Allow Vercel domains
+    if (origin.includes('.vercel.app')) {
+      return callback(null, true);
+    }
+    
+    // Allow Render domains
+    if (origin.includes('.onrender.com')) {
+      return callback(null, true);
+    }
+    
+    // Allow GitHub Pages
+    if (origin.includes('.github.io')) {
+      return callback(null, true);
+    }
+    
+    console.log('CORS blocked origin:', origin);
+    callback(new Error('Not allowed by CORS'));
   },
   credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
 }));
 
 app.use(express.json({ limit: '10mb' }));

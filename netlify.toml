@@ -18,6 +18,9 @@
   # Force npm to install platform-specific binaries
   NPM_FLAGS = "--force"
 
+  # Backend URL for production deployment
+  VITE_BACKEND_URL = "https://s89-sudipta-capstone-learnify-4.onrender.com"
+
 # Redirect all routes to index.html for SPA routing
 [[redirects]]
   from = "/*"

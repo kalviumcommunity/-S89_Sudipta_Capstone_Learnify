@@ -1,4 +1,4 @@
-import axios from 'axios';
+import api from './api.js';
 
 class ProgressService {
   constructor() {
@@ -31,7 +31,7 @@ class ProgressService {
   // Update user progress when a problem is solved
   async updateProblemProgress(problemId, topicId, isCorrect, timeTaken) {
     try {
-      const response = await axios.post('/dsa/progress/update', {
+      const response = await api.post('/dsa/progress/update', {
         problemId,
         topicId,
         isCorrect,
@@ -88,7 +88,7 @@ class ProgressService {
   // Fetch user progress for all topics
   async fetchAllProgress() {
     try {
-      const response = await axios.get('/dsa/progress');
+      const response = await api.get('/dsa/progress');
       if (response.data.success) {
         const progressData = response.data.data;
         
@@ -155,7 +155,7 @@ class ProgressService {
   // Update streak when user solves daily challenge
   async updateDailyStreak() {
     try {
-      const response = await axios.post('/dsa/streak/update');
+      const response = await api.post('/dsa/streak/update');
       return response.data;
     } catch (error) {
       console.error('Error updating streak:', error);
@@ -166,7 +166,7 @@ class ProgressService {
   // Get user's current streak
   async getCurrentStreak() {
     try {
-      const response = await axios.get('/dsa/streak');
+      const response = await api.get('/dsa/streak');
       return response.data.data.streak || 0;
     } catch (error) {
       console.error('Error fetching streak:', error);

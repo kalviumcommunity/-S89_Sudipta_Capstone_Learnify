@@ -1,6 +1,6 @@
 [build]
   # Build command
-  command = "npm run build"
+  command = "cd client && npm install && npm run build"
 
   # Directory to publish (where the built files are located)
   publish = "client/dist"
@@ -19,7 +19,7 @@
   NPM_FLAGS = "--force"
 
   # Backend URL for production deployment
-  VITE_BACKEND_URL = "https://s89-sudipta-capstone-learnify-4.onrender.com"
+  VITE_BACKEND_URL = "https://learnify-backend-d08q.onrender.com"
 
 # Redirect all routes to index.html for SPA routing
 [[redirects]]

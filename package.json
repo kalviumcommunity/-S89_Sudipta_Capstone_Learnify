@@ -2,7 +2,7 @@
   "name": "learnify",
   "version": "1.0.0",
   "scripts": {
-    "build": "cd client && npm ci && npm run build",
+    "build": "cd client && npm install --force && npm run build",
     "start": "cd Server && npm start",
     "dev": "cd client && npm run dev",
     "server": "cd Server && npm run dev",

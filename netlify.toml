@@ -1,19 +1,22 @@
 [build]
   # Build command
   command = "npm run build"
-  
+
   # Directory to publish (where the built files are located)
   publish = "client/dist"
-  
+
   # Base directory for the build
   base = "."
 
 [build.environment]
-  # Node.js version
-  NODE_VERSION = "18.19.0"
-  
+  # Node.js version - using LTS version
+  NODE_VERSION = "20.11.0"
+
   # NPM version
-  NPM_VERSION = "8.19.0"
+  NPM_VERSION = "10.2.4"
+
+  # Force npm to install platform-specific binaries
+  NPM_FLAGS = "--force"
 
 # Redirect all routes to index.html for SPA routing
 [[redirects]]

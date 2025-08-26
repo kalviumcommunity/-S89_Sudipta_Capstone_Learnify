@@ -2,10 +2,13 @@
   "name": "learnify",
   "version": "1.0.0",
   "scripts": {
-    "build": "cd client && npm install && npm run build",
+    "build": "cd client && npm ci && npm run build",
     "start": "cd Server && npm start",
     "dev": "cd client && npm run dev",
-    "server": "cd Server && npm run dev"
+    "server": "cd Server && npm run dev",
+    "install:client": "cd client && npm install",
+    "install:server": "cd Server && npm install",
+    "install:all": "npm run install:client && npm run install:server"
   },
   "dependencies": {
     "axios": "^1.11.0",
